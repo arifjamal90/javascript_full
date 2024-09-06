@@ -1,0 +1,3847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT FULL COURSE</title>
+    <style>
+      .div1 {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <!-- <button id="green">green</button>
+    <button id="blue">blue</button> -->
+    <script>
+      // nested ternary operator-------------------->
+      // let winningNUmber = 19;
+      // let userNumber = +prompt("guess any numbers");
+      // if (userNumber === winningNUmber) {
+      //   console.log("Your guess is right!!");
+      // } else {
+      //   if (userNumber < winningNUmber) {
+      //     console.log("To low!!");
+      //   } else {
+      //     console.log("to hight!!");
+      //   }
+      // }
+
+      // let winningNumber=19;
+      // let userNumber= +prompt("please Enter any number");
+
+      // if(userNumber===winningNumber){
+      //   console.log("this is right number");
+      // }else{
+      //   if(userNumber<winningNumber){
+      //     console.log("this is lowest number");
+      //   }else{
+      //     console.log("thi is highest number");
+      //   }
+      // }
+      // console.log(userNumber);
+
+      // if ,  else if,  else if, else,  operator-------------------->
+      // let tempInDegree = 15;
+      // if (tempInDegree < 10) {
+      //   console.log("extremly cold outside");
+      // } else if (tempInDegree < 16) {
+      //   console.log("it is cold outside");
+      // } else if (tempInDegree < 25) {
+      //   console.log("wheather is okey");
+      // } else if (tempInDegree < 35) {
+      //   console.log("lets go for swim");
+      // } else {
+      //   console.log("too hot!!");
+      // }
+
+      // switch   statement-------------------->
+      // let day = 3;
+      // switch (day) {
+      //   case 0:
+      //     console.log("Sunday");
+      //     break;
+      //   case 1:
+      //     console.log("Monday");
+      //     break;
+      //   case 2:
+      //     console.log("Tuesday");
+      //     break;
+      //   case 3:
+      //     console.log("Wednesday");
+      //     break;
+      //   case 4:
+      //     console.log("Thrusday");
+      //     break;
+      //   case 5:
+      //     console.log("Friday");
+      //     break;
+      //   case 6:
+      //     console.log("Saturday");
+      //     break;
+      //     default:
+      //       console.log("Invalid");
+      // }
+
+      //   while loop ------------------------->
+
+      // let i=0;
+      // let total= 0;
+
+      // while(i<=10){
+      //     total =total +i;
+      //     i++;
+      // }
+      // console.log(total);
+
+      // var i= 1;
+      // var total=0;
+      // while(i<=10){
+      //   total = total+i;
+      //   i++;
+      //   console.log(total);
+      // }
+
+      // for(let i=0; i<=10; i++){
+      //   console.log(i);
+      // }
+      // let total = 0;
+      // const userNumber= +prompt("enter a number")
+      // // let num = 10;
+
+      // for(let i = 1; i <=userNumber; i++) {
+      //   total = total + i;
+      // }
+      // console.log(total);
+
+      // how to concatinate array------------
+      //   const array1 = [1,2,3,4,5,6,7];
+      //   const array2 = [2,5,3,7,5,6,7];
+      //   const concate =[...array1,...array2]
+      //   console.log(concate);
+
+      // first way--------->
+      // const array1=["item1","item2"];
+      // const array2=["item3","item4"];
+      // const array3= array1.concat(array2);
+      // console.log(array3);
+
+      // Second way spread operator --------->
+      // const array1=["item1","item2"];
+      // const array2=["item3","item4"];
+      // const array3=[...array1, ...array2];
+      // console.log(array3);
+
+      // const fruits=["Mango","Apple","Banana","Kivi"];
+      // for(let i=0; i<fruits.length; i++){
+      //   console.log(fruits[i].toUpperCase());
+      // }
+
+      //  const fruits2= [];
+      //  fruits2.push(fruits);
+      //  console.log(fruits2);
+      // ek array jiski ek value ek variable and second value second veriable me dalna h how to do?
+
+      // let myArray=["value1", "value2","value3" ,"value4"] ;
+      // let myNewArray=myArray.slice(2);
+      // let [myvalue1, ,myvalue3]= myArray;
+      // console.log("this is first value",myvalue1);
+      // console.log("this is third value", myvalue3);
+      // console.log(myNewArray);
+
+      // ek array jiski ek value ek variable and second value second veriable me dalna h how to do? with pread operator-------------->
+      //  destructuring krna
+      //  const myArray =["arif", "asim","umar","nasir","prince" ];
+      //  const [myvalue1,myvalue2,...value3]=myArray;
+      //  console.log(value3);
+      // let myArray=["value1", "value2","value3" ,"value4"] ;
+      // let [myvalue1,myvalue2, ...myNewArray]= myArray;
+      // console.log("this is first value",myvalue1);
+      // console.log("this is second value", myvalue2);
+      // console.log("Other values",myNewArray);
+
+      // ek object jiski ek value ek variable and second value second veriable me dalna h how to do?
+      //  destructuring krna
+
+      // let myObj= {name: "arif", age: 24, qualifi : "BCA"};
+      //    const {name:firstValu1, age:mysecondVlue2,}=myObj;
+      //    console.log(firstValu1);
+      // let { name:myname, age:myage, qualifi:myqualifi}=myObj;
+      // // console.log(myObj);
+      // console.log("this is username",myname);
+      // console.log("this is userage", myage);
+      // console.log("this is userqualifi",myqualifi);
+
+      // ek object jiski ek value ek variable and second value second veriable me dalna h how to do? with spread operator---->
+
+      //  const arif={name: "arif", age:20};
+      //       let ansdd= Object.values(arif)
+      //       let nasir=ansdd.reduce((acc,currentValue)=> acc+currentValue,20)
+      //       console.log(nasir);
+
+      // let myObj= {name: "arif", age: 24, qualifi : "BCA"};
+
+      // let { name:myname, ...newObject}=myObj;
+      // console.log(myObj);
+      // console.log("this is username",myname);
+      // console.log("this is new Object",newObject);
+
+      // how to add key value pairs in object--------------------
+      // const key= "umar"
+      //       let myObj= {name: "arif",
+      //        age: 24,
+      //         // hobbies: ["reading Book", "Playing Footbal"]
+      //       };
+      //       // myObj.email= "Arif9072741@gmail.com";
+      //       myObj.age=20,
+      //       myObj[key]= "umar"
+      //       console.log(myObj);
+
+      // yadi hame key and  value ko dono ko change krna h how to do this task?--------
+
+      // hme key ki value= "email" and value "arif@gmail.com" chahiye with variable ke throw-------------
+
+      // const key = "email";
+      //  const myObj= {name: "arif",
+      //  age: 24,
+      //   qualifi : "BCA",
+      // };
+      // myObj[key] = "arif@gmail.com";
+      // console.log(myObj);
+
+      // how to use loop in object ----------------->
+      // one loop use in object (for in loop)--------
+
+      //  const person= {name: "arif",
+      //  age: 24,
+      //   qualifi : "BCA",
+      // };
+      // for(key in person){
+      //   console.log(`${key} :${person[key]}`);
+      // }
+
+      // const key1 = "objectkey1"
+      // const key2 = "objectkey2"
+
+      // const value1 = "myValue1"
+      // const value2 =  "myValue2"
+
+      // this object create const person={object1: "myValue1",object2: "myValue2"}-------------
+
+      // const person={};
+
+      // person[key1] = 'myvalue2' ;
+      // person[key2] = "myValue2";
+      // console.log(person);
+      // person.gender= "Male";
+      // console.log(person);
+
+      // const newObject={
+      //   [key1]:value1,
+      //   [key2]:value2,
+      // }
+      // console.log(newObject);
+
+      // // Object Destructurig-------------
+      //  const person ={name: "Harbance",
+      //                 age: 24}
+
+      //                 const {name, age}=person;
+      //                 console.log(name);
+
+      // console.log(age);
+
+      //  const arif={name:"arif", age:20}
+      //  let  anss=Object.values(arif);
+      //  console.log(anss);
+
+      //  array of object destructuring-------->
+      //   const users =[
+      //     {name: "harshit", age : 30, gender : "male"},
+      //     {name: "Arif", age : 25, gender : "male"},
+      //     {name: "harbance", age : 20, gender : "male"},
+      //   ]
+      // for(let key of users){
+      //   console.log(key);
+      // }
+      //   const [value1, value2,value3]= users;
+      //   console.log(value1.age);
+
+      // function --------------------->
+
+      // function singHappBirhtday(){
+      //   console.log("happy birth day ................");
+      // }
+      //  singHappBirhtday()
+      //  singHappBirhtday()
+
+      // function sum(a,b){
+      //   return a+b;
+
+      // }
+      // const finalValue= sum(5,10);
+      // console.log(finalValue);
+
+      // odd and evan program------------>
+
+      // function isEven(number){
+      //   if(number %2 ===0){
+      //     return true;
+      //   }else{
+      //     return false;
+      //   }
+      // }
+      // console.log(isEven(10));
+
+      // var userNumber=prompt("please Enter A Number");
+      // var num = +userNumber;
+
+      // for(let i =2; i < num; i++){
+      //   if(num % i ==0){
+      //     console.log("this is not a prime number");
+      //   }
+      // }
+      // console.log("this is prime number")
+
+      // const num= prompt("Enter a Number ")
+      // function isPrime(val){
+      // if(num==1){
+      //   return("this is not a prime number and composit number")
+      // }else if(num<1){
+      //   return(" this is not a prime number")
+      // }else{
+      //   for(let i=2; i<num ; i++){
+      //     if(num % i ==0){
+      //       return ("this is not a prime number");
+      //     }
+      //   }
+      //   return ("this is a prime number");
+      // }
+      // }
+
+      // console.log(isPrime(num));
+
+      // let num= prompt("Enter a number")
+
+      //   function isPrime(value){
+      //     if(num==1){
+      //       return(`this is not a prime number and composite number`);
+      //     }else if(num<1){
+      //      return(`this not a prime number`);
+      //     }else{
+      //       for(let i =2; i<num ; i++){
+      //         if(num % i ==0 ){
+      //           return(`this is not a prime number`);
+      //         }
+      //       }
+      //       return(`this is prime number`);
+      //     }
+      //   }
+
+      //  console.log(isPrime(num));
+
+      // function create karna h  jiski input me array and target set krna h  output index of target if target is array----------->
+
+      //    let targetArray=[10,12,14,15,20,25];
+
+      //    function findTarget(array,target){
+      //      for(let i=0; i<array.length; i++){
+      //       if(array[i]===target){
+      //         return[i]
+      //       }
+      //      }
+      //      return-1
+      //    }
+      // let ansss=findTarget(targetArray,12)
+      // console.log(ansss);
+
+      // let myArray=[1,20,12,21,9,10];
+      // function findTarget(array,target){
+      // for(let i=0; i<array.length; i++){
+      //      if(array[i]===target){
+      //       return i
+      //      }
+
+      // }
+      // return -1;
+      // }
+      // const result= findTarget(myArray,10);
+      // console.log(result);
+      //       let myArray = [1, 2, 20, 12, 10, 21];
+
+      // function findArrayTarget(array, target) {
+      //   for (let i = 0; i < array.length; i++) {
+      //     if (array[i] === target) {
+      //       return i;
+      //     }
+      //   }
+      //   return -1;
+      // }
+
+      // const result = findArrayTarget(myArray, 20);
+      // console.log(result);
+
+      // console.log("helloo");
+      //  arrow function ----------------------------
+      // const sum=(a,b,c,d)=>{
+      //   return a+b+c+d;
+      // }
+      //  const ariC:\Users\lenovo\Desktop\practicework\javascriptTask\index.htmlf=sum(5,5,60,20);
+      //  console.log(arif);
+
+      // const bigFunction=()=>{
+      //    const value1= "arif jamal";
+      //      const sum=(a,b)=>{
+      //       return a+b;
+      //       console.log(value1);
+      //      }
+      //      console.log(sum(5,20));
+      // }
+      // bigFunction();
+
+      // function math(){
+      //   const math1= Math.floor(3.55);
+      //   console.log(math1);
+      //   const math2= Math.ceil(3.55);
+      //   console.log(math2);
+      // }
+      // math();
+      // lexical scope --------------->
+      // function app(){
+      //   console.log("firstFunc");
+      //   const name = "Shoeb ahmad"
+      //   function app1(){
+
+      //     console.log(name);
+
+      //     function app2(){
+      //       console.log("secondFunc");
+      //     }
+      //     app2()
+      //   }
+      //   app1()
+      // }
+      // app()
+
+      // var const and let scope i javascript-------------->
+
+      // {
+      //   const name ="arif";
+      //   console.log(name);
+      // }
+
+      // {
+      //   const name ="Prince";
+      //   console.log(name);
+      // }
+
+      // {
+      //   var name ="arif";
+      //   console.log(name);
+      // }
+
+      // {
+      //   var name ="Prince";
+      //   console.log(name);
+      // }
+
+      // var name ="arif";
+      // {
+
+      //   console.log(name);
+      // }
+      //  var name ="Prince";
+      // {
+
+      //   console.log(name);
+
+      // }
+      // const name = "arif";
+
+      // function app(){
+
+      // function myFun(){
+      //   console.log("inside log");
+      // }
+      // function myFunc2(){
+
+      //   const myFunc3 =()=>{
+      //     console.log("last Function");
+      //   const ariiif= "kahnnqqqqqqqqqqqq";
+
+      //   }
+      //   console.log(ariiif);
+      //   myFunc3();
+      // }
+
+      // console.log(name);
+      // myFun();
+
+      // }
+      // app();
+
+      // Rest operator -------------->
+      // example 1
+      // function  sum(...c){
+      //  let total=0;
+      // for(let key of c){
+      //   total+=key;
+      // }
+      // return total;
+      // }
+      // const arif=sum(1,2,5,10,20,22)
+      //  console.log(arif);
+
+      // example 2
+      // // Rest operator
+      // function sum(...numbers){
+      //   let total=0;
+      //   for(let key of numbers){
+      //     total = total+key;
+      //   }
+      //   return total;
+      // }
+      // const allSum=sum(2,10,20,30,35,38);
+      // console.log(allSum);
+
+      // function addAll(...numbers){
+      //  let total = 0;
+      //  for(let key of numbers){
+      //     total= total+key;
+      //  }
+      //  return total;
+      // }
+      //  const ans=addAll(20,12,10,30);
+      //  console.log(ans);
+
+      // let total=0;
+      // function sumAll(...numbers){
+      //  for(let key of numbers){
+      //   total=total+key;
+      //  }
+      //  return total
+      // }
+      // const ans = sumAll(20,10);
+      // console.log((ans));
+
+      // function  myfunc(){
+
+      //   console.log("this is a first fuction");
+      // }
+      //   function myfunc2(a){
+      //      console.log(a);
+
+      // }
+      // myfunc2(myfunc);
+
+      // function myfuc(){
+      //   function hello(){
+      // console.log("hello world");
+      //   }
+      //   return hello;
+      // }
+      // const ans = myfuc();
+      // console.log(ans);
+
+      // const newArray =[3,2,12,10];
+      // newArray.forEach(function(item){
+      //   console.log(`${item *3}`);
+      // })
+      // console.log(newArray);
+
+      // const name1= "Asim";
+      // let username="";
+      // for(let i=name1.length-1; i>=0; i--){
+      //   username +=name1[i]
+
+      // }
+      // console.log(username);
+      //       const users =[
+      //         {name:"arif", age:20, gender:"male"},
+      //         {name:"umar", age:22, gender:"male"},
+      //         {name:"asim", age:23, gender:"male"},
+      //       ]
+
+      //      const username= users.map((item)=>{
+      //       return item.name;
+      //      })
+      //  console.log(username);
+
+      // palindrome number ek aisa number jo aage se wahi pada jaye and peeche se bhi wahi pada jaye like (N I T I N) AND 121
+
+      // function divideArrayIntoParts(array, numParts) {
+      //     // Calculate the size of each part
+      //     const partSize = Math.ceil(array.length / numParts);
+
+      //     // Initialize an empty array to store the result
+      //     const result = [];
+
+      //     // Iterate through the array and create subarrays of the specified size
+      //     for (let i = 0; i < array.length; i += partSize) {
+      //         result.push(array.slice(i, i + partSize));
+      //     }
+
+      //     return result;
+      // }
+
+      // const arr = [1, 3, 4, 5, 6, 7, 6, 7, 8];
+      // const numParts = 3;
+
+      // function divideArray(array, numParts) {
+      //   const partSize = Math.ceil(array.length / numParts);
+      //   const result = [];
+
+      //   for (let i = 0; i < array.length; i + partSize) {
+      //     result.push(array.slice(i, i += partSize));
+      //   }
+
+      //   return result;
+      // }
+
+      // const dividedResult = divideArray(arr, numParts);
+      // console.log(dividedResult);
+
+      // function sumSubarrays(result) {
+      //   let total = 0;
+
+      //   for (let i=0; i<result.length; i++) {
+      //        console.log(i);
+
+      //        function sum(...i){
+      //         add=0
+      //         for(let key in i){
+      //            add= add+key
+      //         }
+      //         console.log(add);
+      //        }
+      //     // for (let value of subarray) {
+      //     //   total += value;
+      //     // }
+      //   }
+
+      //   // console.log(total);
+      // }
+
+      // sumSubarrays(dividedResult);
+
+      //       const arr = [1, 3, 4, 5, 6, 7, 6, 7, 8];
+      // const divideNumber = 3;
+
+      // const newArray = arr.sort(function(a, b) {
+      //   return a - b;
+      // });
+
+      // console.log(newArray);
+
+      // const divideSize = Math.ceil(arr.length / divideNumber);
+      // const result = [];
+
+      // for (let i = 0; i < newArray.length; i += divideSize) {
+      //   result.push(newArray.slice(i, i + divideSize));
+      // }
+
+      // console.log(result);
+
+      // const arr = [1, 3, 4, 5, 6, 7, 6, 7, 8];
+      // const divideNumber = 3;
+
+      // const newArray = arr.sort(function(a, b) {
+      //   return a - b;
+      // });
+
+      // console.log(newArray);
+
+      // const divideSize = Math.ceil(arr.length / divideNumber);
+      // const result = [];
+
+      // for (let i = 0; i < newArray.length; i += divideSize) {
+      //   result.push(newArray.slice(i, i + divideSize));
+      // }
+
+      // const sumArray = result.map(subarray => subarray.reduce((sum, element) => sum + element, 0));
+
+      // console.log(sumArray);
+
+      // closur function------------------>
+
+      // function printFullName(firstName, lastNme){
+      //   function secondFunction(){
+      //     console.log(firstName,lastNme);
+      //   }
+      // return secondFunction();
+
+      // }
+      // const ans=  printFullName("Mohd", "Arif");
+      // ans();
+
+      // function printName(x){
+      // const a= "arif";
+      // const b= "prince";
+      // return function(){
+      //   console.log(a,x,b);
+      // }
+      // }
+
+      //  const ans=printName("harbanse");
+      //  ans();
+
+      //  cube program ----------------------
+
+      // function myFun(power){
+      //   return function(number){
+      //     return number ** power;
+      //   }
+      // }
+
+      //  const cube=myFun(4);
+      //  const ans= cube(3)
+      //  console.log(ans);
+
+      // box sizzing border box isliye use karte h ager kisi div ki with hamne 200px di h jab ham padding ya margin add kare usme add  n ho
+      // function func() {
+      //   let counter = 0;
+      //   return function () {
+
+      //     if (counter < 1) {
+      //       console.log("Hi mai called ho chuka hu");
+      //       counter++;
+      //     } else {
+      //       console.log("mai allredy ek bar called hu chuka hu");
+      //     }
+      //   };
+      // }
+      // const myFunc = func();
+      // myFunc();
+      // myFunc();
+
+      // <script src="script.js defer"><script> is link ka use krne se browser ki perfamance axi hoti
+      // is link ko head tag under hi use karte
+      // css link ki trh usi ke bagal me
+
+      //  const a= document.getElementById("demo").innerHTML=Math.sqrt(2);
+      //  console.log(Math.sqrt(64));
+
+      // Math.round isme ager 4.5 ya 4.6 h us condition me result 5 aayega and 4.4 ya usse kam hua to 4 aaayega
+
+      // Math.ceil isme ager 4.1 ya 4.5 h is condithion me result 5 aayega
+
+      // Math.floor isme ager 4.7 ya 4.9 h us condition me result 4 aayega
+
+      // Math.trunc isme ager 4.7 ya 4.9 h us condition me result 4 aayega
+
+      // Math.sign ager value possitive h us condition me result possitive rhega and value ager negative hui us condithion me result negative aayega like(10) result (1) and (-10) result(-1)
+
+      //  remove dublicate value----------------->
+
+      // let  arif =[1,2,3,2,4,1,5,6,7,5,9];
+      // let unique= [...new Set(arif)];
+      // console.log(unique);
+
+      // map method ------------------>
+      //   const users=[2,5,3,4,5];
+      //   const objectUser=[{name:"Arif", age:25, qualifcatio:"BCA"}];
+
+      //   const mapObject= objectUser.map((value,index)=>{
+      //     return value.name;
+      //   })
+
+      //   console.log(mapObject);
+      // const sqaureNumbers= users.map((number,index)=>{
+      //    return number*number;
+      // })
+      // console.log(sqaureNumbers);
+
+      //     function square(power){
+      //         return function(number){
+      //            return number**power;
+      //         }
+
+      //     }
+      //  const squaree =square(2)
+      //  const ans = squaree(5);
+      //  console.log(ans);
+
+      //  filter method --------------------->
+      // check the even numbers------------------------------------
+
+      // const userNumber= [1,2,3,5,6,8];
+
+      //  const isEven = function(number){
+      //    return number %2 ===0}
+
+      //  const evenNumber =userNumber.filter(isEven);
+      //  console.log(evenNumber);
+
+      // const userNumber= [10,12,20,10,25];
+
+      // const filterNUmber=userNumber.filter((value,index)=>{
+      //   return value>=20
+      // })
+      // console.log(filterNUmber);
+
+      //        const username=[,2,4,6,8,9,10]
+      //       const isEven = function(number){
+      //         return  number % 2!== 0
+      //       }
+      //       const newNumber = username.filter(isEven);
+      //       console.log(newNumber);
+
+      // check the odd numbers------------------------------------
+      // const userNumber = [2,4,6,7,9];
+
+      //  const isOdd=function(number){
+      //   return number % 2!==0;
+      // }
+
+      //  oddNumber = userNumber.filter(isOdd);
+      // console.log(oddNumber);
+
+      // reduce method---------------->
+      // const numbers= [1,2,3,4,5];
+
+      // const sumAllNumbres =numbers.reduce(myFunc);
+
+      //  function myFunc(accumlaor,currentValue){
+      //   return accumlaor+currentValue;
+      // }
+      // console.log(sumAllNumbres);
+
+      // how to work explain ------------------->
+      // accumlaor   currentValue   return
+      //  1            2              3
+      //  3            3              6
+      //  6            4              10
+      //  10           5              15
+
+      // 15 is final result
+
+      // const sumAllNUmbers = [2,3,5,10,20];
+
+      // const sum= sumAllNUmbers.reduce((accumulator,currentValue)=>{
+      //   return accumulator+currentValue;
+      // })
+      // console.log(sum);
+
+      // const totalprice = [
+      //   {productId:1, productName:"Mobile", Price: 10000},
+      //   {productId:2, productName:"Tv", Price: 15000},
+      //   {productId:3, productName:"Laptop", Price: 20000},
+      // ]
+      //  const sumPrice=  totalprice.reduce((totalPrice,currentPrice)=>{
+      //     return totalPrice+ currentPrice.Price;
+      //    },0)
+
+      //    console.log(sumPrice);
+
+      // arraya sort method assendding----------------------->
+
+      // const number=[2,4,5,10,500,200];
+
+      // const numbersorting= number.sort(function(a,b){return a-b});
+
+      // console.log(numbersorting);
+
+      // array sort method decendding----------------------->
+
+      // const number=[2,4,5,10,500,200];
+
+      // const numbersorting= number.sort(function(a,b){return b-a});
+
+      // console.log(numbersorting);
+
+      // Revers method ---------------------->
+
+      // const name= ["my", "name","is", "Arif"];
+
+      // const reverseName = name.toReversed();
+      // console.log(reverseName);
+
+      // array sort price tow to hight------------------->
+
+      // const productshort = [
+      //   {procudtId: 1, poductName:"p1", price: 500},
+      //   {procudtId: 2, poductName:"p2", price: 700},
+      //   {procudtId: 3, poductName:"p3", price: 800},
+      //   {procudtId: 4, poductName:"p4", price: 100},
+      //   {procudtId: 5, poductName:"p5", price: 300},
+      // ]
+
+      // const lowToHighest = productshort.sort((a,b)=>{
+      //   return a.price-b.price;
+      // })
+      // console.log(lowToHighest);
+
+      // console.log(functionnn);
+      // var functionnn= function(){
+      // console.log("this is my first paragraph");
+      // }
+      // console.log(functionnn);
+
+      // const firstnme = "mohd";
+
+      // const myfunction = function(){
+      //       const secondname = "arif";
+      //       function myFrst(){
+      //        console.log(secondname);
+      //        console.log(firstnme);
+      //       }
+      //      myFrst()
+      // }
+      // myfunction()
+      // clusor function
+
+      // function OuterFunction(){
+      //       return 10;
+      // }
+      // const ans=OuterFunction()
+      // console.log(ans);
+
+      // function myfunc(power){
+      // return function(number){
+      //       return number**power;
+      // }
+      // }
+      // const ans =myfunc(2)
+      // const cube = ans(3)
+      // console.log(cube);
+
+      // function myfunc(power){
+      //  return function(number){
+      //       return number**power;
+      //  }
+      // }
+      // const cube = myfunc(3);
+      // const ans = cube(5);
+      // console.log(ans);
+
+      // const object={name: "arif", age: 20, gender: "male" };
+      // const newArray =Array.from(object)
+      // console.log(Array.isArray(newArray));
+
+      // const arif=["name", "arif","asim","kasim"];
+
+      // const arif2=Array.from(arif);
+      // console.log(Array.isArray(arif2) );
+
+      // const array1= ["arif","asim","kasim"];
+      // const newArray =Object.values(array1)
+      // console.log(newArray);
+
+      // const person = {
+      //   name: "John",
+      //   age: 30,
+      //   city: "New York"
+      // };
+
+      // const myArray = Object.values(person);
+      // console.log(myArray);
+
+      // const num1=[1,2,"arif",6,10];
+      // const num2=num1.at(2);
+      // console.log(num2);
+
+      // array sort price  hight to low------------------->
+
+      // const productshort = [
+      //   {procudtId: 1, poductName:"p1", price: 500},
+      //   {procudtId: 2, poductName:"p2", price: 700},
+      //   {procudtId: 3, poductName:"p3", price: 800},
+      //   {procudtId: 4, poductName:"p4", price: 100},
+      //   {procudtId: 5, poductName:"p5", price: 300},
+      // ]
+
+      // const highestToLow = productshort.sort((a,b)=>{
+      //   return b.price-a.price;
+      // })
+      // console.log(highestToLow);
+
+      // find method ------------------->
+
+      // const myArray =["hellow", "how" ,"are", "you?"];
+
+      // function isLength(string){
+      //   return string.length===3;
+      // }
+      //  const arif =myArray.find(isLength);
+      //  console.log(arif);
+
+      // const Arry1 =["i", "am" ,"well", "also"];
+
+      // function isLegth(string){
+      //   return string.length===2;
+      // }
+
+      // const arrr=Arry1.find(isLegth);
+      // console.log(arrr);
+
+      // const array = ["Aisha","arif","asim"];
+
+      // function isLength(string){
+      //   return string.length===5;
+      // }
+      // const arr= array.find(isLength)
+      // console.log(arr);
+
+      // const array1=["arif", "jamal" , "kamal"]
+
+      // let arr=array1.find((elemments)=>{
+      //  return elemments.length===5
+      // })
+      // console.log(arr);
+
+      // function isLength(string){
+      //   return string.length===5
+      // }
+
+      // const arif= array1.find(isLength)
+      // console.log(arif);
+
+      // const arrr2= [2,4,6,8,9,11,10];
+
+      // function isEven(number){
+      //     return number % 2===0
+      // }
+
+      //  const ans=arrr2.filter(isEven);
+      //  console.log(ans);
+
+      // const arrr2= [2,4,6,8,9,11,10];
+
+      // function isOdd(number){
+      //     return number % 2!==0
+      // }
+
+      //  const ans=arrr2.filter(isOdd);
+      //  console.log(ans);
+
+      // // jab kisi list me name search krna rhta h tab find method ka use krte h like
+
+      // const users= [
+      //   {userId: 1, userName:"Arif"},
+      //   {userId: 2, userName:"Asim"},
+      //   {userId: 3, userName:"Umar"},
+      //   {userId: 4, userName:"Prince"},
+      //   {userId: 5, userName:"Harbanse"},
+      // ]
+
+      // const userIdfind=users.find((user)=>user.userId===3);
+      // console.log(userIdfind);
+
+      // every method jab sari conditio true hogi tabhi result true return kareg verna false return karega-----
+
+      // const users= ["arif","Asim", "asim","mohd"]
+
+      //  const final=users.every((item)=>item.length === 4);
+      //   console.log(final);
+
+      // some method is me ager ek bhi number true h  to result true aayega -----------------
+
+      //   const numberss= [3,4,5,7,9];
+
+      //     const ans=numberss.some((number)=>number%2===0);
+      //   console.log(ans);
+
+      //  what is itrable-------------------->
+      // itrable wo h jispe for of loop ka use kr kte h like string and array are itrable
+
+      // and object itrable nahi h
+
+      // array like object jinke pass length properte hoti and jinhe hm index find kr kte h unko array like object kahte h
+
+      // Map
+
+      // key value pair
+
+      //   const person = new Map();
+      //   person.set("firstName", "arif");
+      //   console.log(person);
+      //   person.set('age',20);
+      //   console.log(person);
+      //   person.set(1, "one");
+      //   console.log(person);
+      //   console.log(person.keys());
+
+      // optional chaining ----------------->
+
+      // const user ={userName: "arif",
+      //             //  address:{houseNumber: 234}
+      //           }
+
+      // console.log(user?.userName);
+      // console.log(user.address);
+
+      // what is method?    -------------->
+      //  function inside object is called method
+
+      //   function personinfo(){
+      //       console.log(` my name is ${this.firstName} and this is my ${this.age}`);
+
+      //   }
+
+      //   const user= {
+      //     firstName: "mohd",
+      //     lastName:  "arif",
+      //     age:        20,
+      //     about: personinfo
+      //   }
+
+      // const user1= {
+      //   firstName: "abu",
+      //   lastName:  "arif",
+      //   age:        10,
+      //   about: personinfo
+      // }
+      // const user2= {
+      //   firstName: "arif",
+      //   lastName:  "arif",
+      //   age:        30,
+      //   about: personinfo
+      // }
+      // user2.about();
+
+      // call bind and apply method---------------->
+
+      // const user1 ={
+      //   name: "arif",
+      //   age :  20,
+      //   about: function(hobbies, musician){
+      //     console.log(this.name, this.age ,hobbies, musician);
+      //   }
+
+      // }
+
+      // const user2 ={
+      //   name: "asim",
+      //   age :  30,
+      // }
+
+      // user1.about.call(user2 ,"football", "Arman Malik")
+
+      // is method ko call method kahte h  is function me alg alg argument pass karte hai___________
+
+      // const user1 ={
+      //   name: "arif",
+      //   age :  20,
+      //   about: function(hobbies, musician){
+      //     console.log(this.name, this.age ,hobbies, musician);
+      //   }
+
+      // }
+
+      // const user2 ={
+      //   name: "asim",
+      //   age :  30,
+      // }
+
+      // user1.about.apply(user1 ,["football", "neha kakker"])
+
+      // // is method ko apply method  kahte h  is function me  argument array ke rop me bhejte h ---------->
+
+      // const user1 ={
+      //   name: "arif",
+      //   age :  20,
+      //   about: function(hobbies, musician){
+      //     console.log(this.name, this.age ,hobbies, musician);
+      //   }
+
+      // }
+
+      // const user2 ={
+      //   name: "asim",
+      //   age :  30,
+      // }
+
+      // const myFunc=user1.about.bind(user2 ,"football", "neha kakker")
+      // myFunc()
+
+      // is method ko bind method  kahte h  is function me  argument alg alg leta h aur ek function bnata h and jab usko zarurat padti h tab usko call kerta h  ---------->
+
+      // NOTe => arrow function me this ka use nahi hota h
+
+      // hamne 2 objet create kiya h phle object me 2 value h value1 and value2 and second  object me value3 h but console me 2object se  2 ki value nikalna h ------------>
+      // const obje1 ={key1: "value1",
+      //               key2 : "value2",
+      //             }
+
+      //             const objet2 =  Object.create(obje1)
+
+      //             objet2.key3= "value3"
+      // console.log(objet2.key2);
+
+      // jab ham function create krte h tab function hame free space dete h usko ham bolte h prototype oly function provide proto properti
+
+      // javascript hosting----------------------
+
+      // var a= 10;
+      // console.log(a + " "+ b);
+      // var b =20;
+      // answer 10 b ki value undefined h beacuse move the top only delaration not initiolisation
+
+      // var a = "hello";
+
+      // console.log(a);
+      // function show(){
+      //       console.log(a);
+      //       var a = " jamal"
+      // }
+      // show();
+
+      // answer hello second a  ki value undefined h beacuse ye function ke niche define h   ager function ke uper hota tb value undefined nhi hoti
+
+      // lexical scope here ----------------
+
+      //   function Outer(){
+      //    let guess = "magic Number"
+
+      //     function firstInner(){
+      //         const common= "hello"
+      //     }
+      //    function inner(){
+      //         console.log(guess);
+
+      //    }
+      //    inner()
+
+      //   }
+      //   Outer();
+      //   console.log(guess,"ahahahh");
+
+      // function clickHandler(color){
+      // document.body.style.backgrundColor= `${color}`
+
+      //       return function(){
+      //             document.body.style.backgroundColor =`${color}`
+
+      //       }
+
+      // }
+
+      // document.getElementById("blue").onclick = clickHandler("blue")
+      // document.getElementById("green").onclick = clickHandler("green")
+
+      // var a = "arif"
+
+      // function arif(){
+      //   console.log(a);
+      //   function  seconsd(){
+      //       b = "asim";
+      //       console.log(b)
+      //       var  b;
+      //   }
+      //   seconsd()
+      // }
+      // arif()
+      // recursive function
+      // function number(n, i = 1) {
+      //     if (i <= n) {
+      //         console.log(i);
+      //         number(n, i + 1);
+      //     }
+      // }
+
+      // number(5);
+      // recursion function ek aisa function hota h jo sel call krta h and jab tak condition true nahi hojati tab tk call krta h when conditio is true after that result is rpint on screen is called recursio function
+      // let i = 1;
+      // function number(n) {
+      //   if (i > n) {
+      //     return;
+      //   }
+      //   console.log(i);
+      //  i++
+      //   number(n);
+      // }
+      // number(10);
+
+      // const userNumber= prompt("plaese enter a any number");
+
+      // let counter=1;
+
+      // function number(userNumber){
+      //  if(counter>userNumber){
+      //       return
+
+      //  }
+      //  console.log(counter);
+      //  counter++;
+      //  number(userNumber)
+
+      // }
+      // // number(userNumber)
+
+      // let myArray=[2,1,4,3,5];
+      // let i=0;
+      // let j=1;
+      // function sortisted(array){
+      //       if(array[i]< array[j]){
+      //             i++;
+      //             j++
+      //             sortisted(array)
+      //             return
+      //       }
+      //       if(array[i]< array[j]){
+      //             i=0;
+      //             j++
+      //             sortisted(array)
+
+      // }
+      // sortisted(myArray)
+
+      // class oop---------------------------
+
+      // class student{
+      //       constructor(name, age, cls){
+      //            this.myname = name;
+      //            this.myage = age;
+      //            this.mycls = cls
+      //       }
+      //       // instance method is called
+      //       // bioData(){
+      //       //       console.log(`my name is ${this.myname} and my Age is ${this.myage} yaers old i have passout ${this.mycls} and  like ${this.mygame}`);
+      //       // }
+      // }
+
+      // class player extends student{
+      //   constructor(name, age, cls,game){
+      //       super(name, age, cls)
+      //    this.mygame = game;
+      //   }
+      // // play_boidata(){
+      // //       console.log(`my name is ${this.myname} and my Age is ${this.myage} yaers old i have passout ${this.mycls} and  like ${this.mygame} and ${this.toper}`);
+      // // }
+      // }
+
+      // class lejent extends player{
+      //    constructor(name, age, cls,game,math){
+      //       super(name, age, cls,game)
+      //    this.toper =math;
+      //    }
+
+      //    final_boidata(){
+      //       console.log(`my name is ${this.myname} and my Age is ${this.myage} yaers old i have passout ${this.mycls} and  like ${this.mygame} and ${this.toper}`);
+      //    }
+      // }
+
+      // // new object phalhe student tha ab usko inherit krne liye uska name change krdiya hu
+      // let  obejct1=new lejent ('arif',25,'BCA','football','math')
+      // let  obejct2=new lejent ('asim',20,'MCA','cricket','physics')
+      // obejct1.final_boidata();
+      // obejct2.final_boidata();
+
+      // class student{
+      //   constructor(name,age,gender){
+      //     this.myname= name;
+      //     this.myage= age;
+      //     this.mygender= gender;
+      //   }
+      //  student_biodata(){
+      //   console.log(`my name is ${this.myname} and my age is ${this.myage} my gender is ${this.mygender}`)
+      //  }
+
+      // }
+      // let obj1= new student('arif',23, 'male')
+      //  obj1.student_biodata();
+
+      // class studet{
+      //   constructor(name,gender,cls){
+      //     this.myname=name
+      //     this.mygender=gender
+      //     this.mycls=cls
+      //   }
+      //   biodata(){
+      //     console.log(`my name is ${this.myname} and my gender is ${this.mygender} my class ${this.mycls}`);
+      //   }
+      // }
+
+      // const obj2=new studet('Arif','male','bca');
+      // obj2.biodata();
+
+      // const array=["salman", "shahrukh", "Hrithik"]
+      // const array1=["sumit", "Arif", "Hrithik"]
+
+      // let check= array
+
+      // const array1 = ["salman", "shahrukh", "hrithik"];
+      // const array2 = ["salman", "aamir", "hrithik"];
+
+      // // Create an empty array to store common elements
+      // const commonElements = [];
+
+      // // Loop through each element of array1
+      // for (let i = 0; i < array1.length; i++) {
+      //     // Check if the current element of array1 exists in array2
+      //     if (array2.includes(array1[i])) {
+      //         // If it exists, push it to the commonElements array
+      //         commonElements.push(array1[i]);
+      //     }
+      // }
+
+      // console.log("Common elements:", commonElements);
+
+      // two array compare base filter ------------------------->
+      // const arr1=[10,15,20]
+      // const arr2=[10,13,90]
+
+      // const common= arr1.filter((element) => arr2.includes(element))
+      // console.log(common);
+
+      //  for(let i=0 ; i<array.length; i++){
+
+      //  }
+      //  if(array[i]==="salaman"){
+      //     console.log();
+      //    }
+
+      // leetcode question start--------------------------
+
+      // const  nums = [1,3,4,8,7,9,3,5,1]; k=2;
+
+      // function countPairDifferent(){
+      //   let numset = new Set(nums);
+      //   let pairCount  = 0;
+
+      //   nums.forEach((num)=>{
+      //   if(numset.has(num +k)){
+      //     pairCount ++;
+      //   }
+      //   })
+      //   return pairCount;
+      //   console.log(pairCount);
+      // }
+      // countPairDifferent()
+
+      // function countPairsWithDifference(nums, k) {
+      //   let numsSet = new Set(nums);
+
+      //   console.log(numsSet,"kkssss");
+      //   let pairsCount = 0;
+
+      //   nums.forEach(num => {
+      //       if (numsSet.has(num + k)) {
+      //           pairsCount++;
+      //       }
+      //   });
+
+      //   return pairsCount;
+      // }
+
+      // // Example usage:
+      // let nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
+      // let k = 2;
+      // let result = countPairsWithDifference(nums, k);
+      // console.log(`Number of pairs with difference ${k}: ${result}`);
+
+      // let nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
+      // let k=2;
+
+      // for(let i=0; i<nums.length; i++){
+
+      // // }
+      // function divideArray(nums, k) {
+      //     nums.sort((a, b) => a - b); // Sort the array
+      //     const result = [];
+      //     let tempArray = [nums[0]]; // Initialize the temporary array with the first element
+
+      //     for (let i = 1; i < nums.length; i++) {
+      //         if (nums[i] - tempArray[0] <= k) {
+      //             tempArray.push(nums[i]); // Add element to the temporary array if the condition is met
+      //         } else {
+      //             result.push(tempArray); // Push the current temporary array to the result array
+      //             tempArray = [nums[i]]; // Start a new temporary array with the current element
+      //         }
+      //     }
+
+      //     result.push(tempArray); // Push the last temporary array to the result array
+      //     return result;
+      // }
+
+      // Example usage:
+      // function divideArray(nums, k) {
+      //     let result = [];
+      //     for (let i = 0; i < nums.length; i += k) {
+      //         result.push(nums.slice(i, i + k));
+      //     }
+      //     return result;
+      // }
+
+      // let nums = [1, 3, 4, 8, 7, 9, 3, 5, 1,3];
+      // const num2= [...new Set(nums)];
+      // console.log(num2);
+
+      // let a=10;
+
+      // for(let i = 0; i<a ; i++){
+      //   console.log(i);
+      //   for(let j= 0; j<i; j++){
+      //     console.log(j);
+      //   }
+      // }
+      // let k = 2;
+      // let result = divideArray(nums, k);
+
+      // console.log(result); // Output the result
+
+      // async await function------------------
+
+      // const ticket= new Promise(function(resolve, rejecte){
+      //         let isBoared =false;
+      //         if(isBoared){
+      //           resolve("You are in the flight");
+      //         }else{
+      //           rejecte("your flight is cancelled");
+      //         }
+      // });
+
+      // ticket
+      // .then((data)=>{
+      //   console.log(data,"wow");
+
+      // }).catch((data)=>{
+      //   console.log(data,"error");
+      // })
+
+      // function getCheese() {
+      //     return new Promise((resolve, reject) => {
+      //         setTimeout(() => {
+      //             const cheese = "arif";
+      //             resolve(cheese);
+      //         }, 2000);
+      //     });
+      // }
+
+      // function makeDough(cheese) {
+      //     return new Promise((resolve, reject) => {
+      //         setTimeout(() => {
+      //             const dough = cheese + "asim"; // Corrected variable name from dough to cheese
+      //             resolve(dough);
+      //         }, 2000);
+      //     });
+      // }
+
+      // function makePizza(dough) {
+      //     return new Promise((resolve, reject) => {
+      //         setTimeout(() => {
+      //             const pizza = dough + "umar";
+      //             resolve(pizza);
+      //         }, 2000);
+      //     });
+      // }
+
+      // getCheese()
+      //     .then((cheese) => {
+      //         console.log("Here is cheese", cheese);
+      //         return makeDough(cheese);
+      //     })
+      //     .then((dough) => {
+      //         console.log("Here is dough", dough);
+      //         return makePizza(dough);
+      //     })
+      //     .then((pizza) => {
+      //         console.log("Here is pizza", pizza);
+      //     })
+      //     .catch((error) => {
+      //         console.log("Here is your error", error);
+      //     });
+
+      // temporal dead zose      -------------------------
+
+      // a= 10;
+      // console.log(a);
+      // var a=20;
+      // console.log(a);
+
+      // myFunc()
+
+      //   var myFunc= function(){
+      //     console.log("first");
+      // }
+
+      // myFunc()
+
+      //  function myFunc(){
+      //     console.log("second");
+      // }
+
+      // myFunc()
+
+      // var variable= 10;
+
+      // (()=>{
+      //     console.log(variable);
+
+      //      variable =20;
+      //     console.log(variable);
+
+      // })()
+
+      // console.log(variable);
+
+      // var variable=30;
+
+      // for(let i=0; i<10; i++){
+      // setTimeout (()=>{
+      //     console.log(i), 0
+      // })
+      // }
+      // let user = 1;
+
+      // function number(n) {
+      //   if (n <= 10) {
+      //     console.log(n);
+      //     number(n + 1);
+      //   }
+      // }
+
+      // number(user);
+
+      // let userNmber= prompt("Enter any number")
+
+      // if(userNmber==1){
+      //   console.log(`${userNmber} this is not a prime number and not composite number`);
+      // } else if(userNmber<1){
+      // console.log(`${userNmber} this is not a prime number`);
+      // }else{
+      //   let  isprime = true;
+      //   for(let i= 2 ; i<userNmber ; i++){
+      //    if(userNmber % i === 0){
+      //     var res = `${userNmber} this is not a prime number `;
+      //     isprime= false;
+      //     break;
+
+      //    }}
+      //    if(isprime){
+      //     console.log(`${userNmber} this is prime number`);
+      //    }
+      //    else{
+      //     console.log(`${userNmber} this is not prime number`);
+
+      //   }
+      // }
+
+      // let userNumber =+ prompt("Enter a number");
+      // if(userNumber==1){
+      //   console.log(`${userNumber} this not prime and composite number`);
+      // }else if(userNumber<1){
+      //    console.log(`${userNumber} this is not a prime number`);
+      // }else{
+      //   for(let i=2 ; i <userNumber; i++){
+      //     if(userNumber % i == 0){
+      //       var  res= `${userNumber} this is not prime number`;
+      //       break;
+      //     }else{
+      //       var  res= `${userNumber} this is prime number`;
+      //     }
+      //   }
+      //   console.log(res);
+      // }
+
+      // swepping program
+
+      // let a= 10;
+      // let b = 5;
+
+      // console.log(a,b);
+      // let ans = a;
+      //    a=b;
+      //  b= ans;
+      // console.log(a,b);
+
+      // let a = 10;
+      // let b = 5;
+
+      // console.log("Before swapping:", a, b);
+
+      // let temp = a;
+      // a = b;
+      // b = temp;
+
+      // console.log("After swapping:", a, b);
+
+      // const array1= [1,5,20,30];
+      // let count=0;
+      // for(let i =0; i<array1.length; i++){
+
+      //   count += array1[i];
+
+      // }
+      // console.log(count);
+      // const array1= [5,10,20,30];
+
+      // const array2=array1.reduce(myfunction)
+
+      //   function  myfunction(total, value) {
+      //     return total+value;
+      //   }
+      // console.log(array2);
+
+      // const numb2= array1.reduce((totale,value)=> totale+value)
+      // console.log(numb2);
+
+      // const map1= array1.map((item)=>{
+      //   return item-5;
+      // })
+      // console.log(map1);
+
+      // const num = 1;
+
+      // function numbr(n){
+      //   if(n<=10){
+      //     console.log(n);
+      //     numbr(n+1)
+      //   }
+      // }
+      // numbr(num)
+
+      // let num1 = 1;
+
+      // function  number(n){
+      // if(n<=15){
+      //   console.log(n);
+      //   number(n+1);
+      // }
+      // }
+      // number(num1);
+
+      // let number=1;
+
+      // function numbers(n){
+      //   if(n<=10){
+      //     console.log(n);
+      //     numbers(n+1)
+
+      //   }
+      // }
+      // numbers(number)
+
+      // function printPattern(rows) {
+      //     for (let i = 1; i <= rows; i++) {
+
+      //         let pattern = '';
+      //         for (let j = 1; j <= i; j++) {
+      //             pattern += '*'+ " ";
+      //         }
+      //         console.log(pattern);
+      //     }
+      // }
+
+      // printPattern(5); // Change the argument to the number of rows you want
+
+      // reverse print pattern --------------
+      // function printPattern(num){
+      //   for(let i=num; i>=1; i--){
+      //     let pattern ="";
+      //     for (let j=1; j<=i; j++){
+      //       pattern += "*"+ " ";
+      //     }
+      //     console.log(pattern);
+      //   }
+      // }
+      // printPattern(5)
+
+      // const obj= [
+      //   {name: "Arif", age: "20", gender: "male"},
+      //   {name: "Asim", age: "23", gender: "male"},
+      //   {name: "Sonamika", age: "25", gender: "female"},
+      //   {name: "Monika", age: "24", gender: "female"},
+      // ]
+
+      // const obj1=obj.sort((a,b)=> {
+      //   return b.age-a.age;
+      // })
+      // console.log(obj1);
+
+      // function square(power) {
+      //   return function(number) {
+      //     return number ** power;
+      //   }
+      // }
+
+      // let cube = square(2);
+      // let ans = cube(3);
+      // console.log(ans); // Output: 9
+
+      // let task = false;
+
+      // let data = { message: "Sample data" };
+
+      // function fetchData(){
+      //   return new Promise((resolve, rejected)=>{
+      //     if(task){
+      //       resolve(data);
+      //     }else{
+      //       rejected("faild work");
+      //     }
+      //   })
+      // }
+      // fetchData()
+      // .then (data=> console.log(data))
+      // .catch (error=> console.log(error))
+
+      // const obj1= {
+      //   name: "arif",
+      //   age:20
+      // }
+
+      // let text="";
+
+      // for(let key in obj1){
+      //   text += obj1[key]
+      // }
+      // console.log(text);
+
+      // const arr11= ["arif", 29, null ]
+      //  let text="";
+      //  for(let key of arr11){
+      //   text = arr11
+      //  }
+      //  console.log(text);
+
+      // const nmbers=[1,2,3,4,5,6,7,8,9];
+      // const maxValue= Math.max(...nmbers)
+      // console.log(maxValue);
+
+      // function sum(...arg){
+      //   let count=0 ;
+      //   for(let x of arg)
+      //     count+= x;
+      //     return
+      // }
+      // let a= sum(2,33,4,4,4,4,4,5,5,55,5)
+      //  console.log(a);
+
+      // const findValue= [5,10,25,29];
+
+      // let over18= findValue.findIndex(myfunction)
+
+      // function myfunction(value,index){
+      //   return value>18;
+      // }
+
+      // console.log(over18);
+
+      // const findValue= [5,10,25,29];
+      // let over20= findValue.find((value,index)=>{
+      //   return value>20
+      // })
+      // console.log(over20);
+
+      // const fruits=['mango', 'banana','apple'];
+      // const f= fruits.entries();
+      // let a='';
+      // for(let x of f){
+      //  a += x;
+
+      // }
+      // console.log(a);
+
+      // const fruitsss = ["Banana", "Orange", "Apple", "Mango"];
+      // const fs = fruitsss.entries();
+      // let arif="";
+      // for (let x of fs) {
+      //   arif += x ;
+
+      // }
+      // console.log(arif);
+
+      // const mapObject= 'hello  world '
+      // const and=mapObject.has("hello");
+      // console.log(and);
+
+      // const person1= {
+      //   FName: "asim",
+      //   LName: "abu",
+      //   fullName : function(homeTown, city){
+      //     return  this.FName + this.LName +" "+  homeTown  + " "+ city;
+      //   }
+      // }
+
+      // const person2= {
+      //   FName: "arif",
+      //   LName: "Mohd"
+      // }
+
+      // console.log(person1.fullName.call(person2, "Mau", "Adri"));
+
+      // console.log(person1.fullName.apply(person2, ["Mau", "Adri"]));
+
+      //  const result =person1.fullName.bind(person2, "Mau", "Adri");
+      // console.log (result());
+
+      // const x = (a,b)=>{
+      //   return (a*b)
+      // }
+      // console.log(x(5,5));
+
+      // const suceess= "arif";
+      // const faild= "asim";
+
+      // function  getData(){
+      //   return new Promise ((resolve,rejected)=>{
+
+      //     if(suceess){
+      //       setTimeout(()=>{
+      //         resolve(suceess);
+      //       } ,2000)
+
+      //     }else{
+      //       rejected(faild);
+      //     }
+      //   });
+      // };
+
+      //  getData()
+      //  .then(data=> console.log(data))
+      //  .catch(error => console.log(error));
+
+      // const myPrmise = new Promise((resolve, rejected)=>{
+      //   const ab = 10 ; const ba= 15;
+      //    const c= 10;
+      //    if(c===ba){
+      //     resolve(" i am well")
+      //    }else{
+
+      //     rejected(" i am unwell")
+      //    }
+
+      // })
+
+      // myPrmise.then(data=> console.log(data))
+      // .catch(error => console.log(error));
+
+      //   const obj= [
+      //         {name: "Arif", age: "20", gender: "male"},
+      //         {name: "Asim", age: "23", gender: "male"},
+      //         {name: "Sonamika", age: "25", gender: "female"},
+      //         {name: "Monika", age: "24", gender: "female"},
+      // ]
+      //  obj.forEach((item)=> console.log(item.age))
+
+      // const arrayWithDuplicates = [1, 2, 3, 2, 4, 1, 5, 3];
+      // const uniqueArray = [...new Set(arrayWithDuplicates)];
+      // console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+
+      // let user = 1;
+
+      // function number(n) {
+      //     if (n <= 30) {
+      //         if (n % 3 === 0 && n % 5 === 0) {
+      //             console.log("gholu");
+      //         } else if (n % 3 === 0) {
+      //             console.log("asim");
+      //         } else if (n % 5 === 0) {
+      //             console.log("arif");
+      //         } else {
+      //             console.log(n);
+      //         }
+
+      //         number(n + 1);
+      //     }
+      // }
+
+      // number(user);
+
+      //   const name= "AsimKhan"
+      //   let reversename="";
+
+      //   for(let i=name.length-1; i>=0; i--){
+      //      reversename+=name[i]
+
+      //   };
+      //  console.log(reversename);
+
+      //
+
+      // let a=[];
+      // let b=[];
+      // console.log(a==b);
+      // console.log(a===b);
+
+      // answer dono false
+
+      // let a=[];
+      // let b=a;
+      // console.log(a==b);
+      // console.log(a===b);
+
+      // answer dono true
+
+      // let a=[20];
+      // let b=[20];
+      // console.log(a[0]==b[0]);
+      // console.log(a[0]===b[0]);
+
+      // answer dono true
+
+      // let a = [1,4,5,20];
+      // let b= {name: "arif",age: 20}
+      // console.log(...a);
+
+      // let a=10 - - 10
+      // console.log(a);
+      // output 20
+
+      // let data=["arif", "asim", "umar"];
+      // let [y]= data;
+      // console.log(y);
+
+      // let data ={name: "arif", Age: 25, }
+      // // we want direct assess name
+      // let {name}= data;
+      // console.log(name);
+
+      // let obj={name: "arif", age: 20, skill: "js"}
+      // let obj1={name: "asim", skill: "java" }
+      // let obj2={name: "kasim", skill: "HTML" }
+      // data= {...obj, ...obj1,...obj2};
+      // console.log(data);
+
+      // let result = false || {} || null;
+      // console.log(result);
+
+      // function valueSum(x,y,z){
+      //   return x+y+z;
+      // }
+      // const ans= valueSum(...[1,2,3])
+      // console.log(ans);
+
+      // const name ='code step by step';
+      // console.log(typeof name === 'object');
+      // console.log(typeof name === 'string');
+
+      // const name="subcribe";
+      // const age= 21;
+      // console.log(isNaN(name));
+      // console.log(isNaN(age));
+
+      // first true
+      // first false
+
+      // const person= {name: "mohd"}
+      // Object.seal(person)
+      // console.log(person);
+      // // seal lagne ke bad usme value add nahi ho skti h us value ko modify ker skte h
+      // person.name="arif"
+      // console.log(person);
+
+      // const arr1= [10,12,20,21];
+      // arr2=arr1.shift()
+      // console.log(arr2);
+      // console.log(arr1);
+
+      // let a= 1;
+      // let b= 2;
+      // console.log(--b===a);
+
+      // answer true becuease b ka decrement hogya  h jiski ek kam hogyi h us case me dono value same hogyi h
+
+      // let a= 1;
+      // let b= 1;
+      // let c= 2;
+      // console.log(a === b === --c);
+      // answer false becuease a and b  ki value true hogyi h  us case me b ek true h and c ek numeric h jiski value 1 h isliye false hogya h
+
+      // for(let i=0; i<3; i++){
+      //   setTimeout(()=>   console.log(i), 1);
+      // }
+
+      // let numbr=0;
+      // console.log(numbr++);
+      // console.log(++numbr);
+      // console.log(numbr);
+
+      // function myfunc(x, z,y=10){
+      //   return x+y+z
+      // }
+      // const ans = myfunc(5,20)
+      // console.log(ans);
+
+      // function add(a, b, callback) {
+      //     let result = a + b;
+      //     callback(result);
+      // }
+
+      // function displayResult(result) {
+      //     console.log("Addition result:", result);
+      // }
+
+      // add(3, 5, displayResult);
+
+      // function sum (a,b, callback){
+      //   let result = a+b;
+      //   callback(result)
+      // }
+      // function displayResult(result){
+      //   console.log( "addresult :result" , result);
+      // }
+      // sum(10,5, displayResult)
+
+      // function number(...arg){
+      //   let total = 0;
+      //   for(let key of arg){
+      //     total+= key;
+
+      //   }
+
+      //   console.log(total);
+      // }
+      // number(1,5,6,7,4,56,78,10)
+
+      // function sum(x,y){
+      //   return x+y
+
+      // }
+      //  const ans=sum(10,20)
+      // console.log(ans);
+
+      // call apply and bind method here
+
+      // const student= {
+      //   Fname: "mohd",
+      //   LName: "arif",
+      //   age: 25,
+      //   fullName: function(city, country){
+      //    return this.Fname + " "+ this.LName + " "+ city + " " + country
+      //   }
+      // }
+
+      // const teacher= {
+      //   Fname: "Abu",
+      //   LName: "Asim",
+      //   age: 20,
+      // }
+
+      // console.log(student.fullName.call(student,"Mau" , "india"  ));
+      // console.log(student.fullName.apply(teacher,["Mau" , "india"]  ));
+      //  let ans =(student.fullName.bind(teacher ,"Mau" , "india"  ));
+      //  console.log(ans());
+
+      // optional channig ----------
+
+      // const user={
+      //   name : "Arif",
+      //   age : 20,
+      //   address: {
+      //     street: "darussalam",
+      //     city : "Mau",
+      //     county: "India"
+      //   }
+      // }
+
+      // console.log(user.address.street?.house);
+
+      // const numbrs=[1,15,20,1,5,10];
+      // // const findNumber=numbrs.sort(function(a,b){return(a-b)})
+      //   const highest= Math.max(...numbrs)
+      // console.log(highest);
+
+      // const temp = [27, 28, 30, 40, 42, 35, 30];
+      // const high= temp.find((value,array)=>{
+      // return value>35
+      // })
+      // // function Myfunction(value, array,index){
+      // //  return value > 35
+      // // }
+      // console.log(high);
+
+      // const temp = [27, 28, 30, 40, 42, 35, 30];
+      // let high = temp.findLast(x => x > 35);
+      // console.log(high);
+
+      // let name= "asim";
+      // let usrname= "";
+      // for(let i=name.length-1; i>=0; i--){
+      //   usrname+= name[i]
+      // }
+      // console.log(usrname);
+
+      // symbol
+
+      // let age= Symbol("age");
+
+      // const user={
+      //   Name: "arif",
+      //   Qualification: "BCA",
+      //   [age]: 25
+      // }
+      // console.log(user);
+
+      // var $name= "arif"
+      // console.log($name);
+
+      // const user={
+      //   let: "arif",
+      //   const: "jamal"
+      // }
+      // console.log(user);
+
+      // const arr1=["Mango", 'apple', "kivi"];
+      // arr1[0]= "Banana";
+      // console.log(arr1);
+
+      // let a=1;
+      // let b=1;
+      // let c=2;
+      // console.log(a=== b == --c);
+
+      // const number=[,12,10,15,20,31,10];
+      // number.sort(function(a,b) {
+      //   return b-a
+      // })
+      // console.log(number[1]);
+
+      // const myObject = {
+      //     key1: 'value1',
+      //     key2: 'value2',
+      //     key3: 'value1' // Duplicate value
+      // };
+
+      // console.log(myObject); // Output: value1
+      // // console.log(myObject.key3); // Output: value1
+      // const myObject = {
+      //     key1: ['value1', 'value2', 'value3'], // Array as value
+      //     key2: { subkey1: 'value1', subkey2: 'value2' } // Object as value
+      // };
+
+      // console.log(myObject.key1[0]); // Output: value1
+      // console.log(myObject.key2.subkey2); // Output: value2
+
+      // const obj={
+      //   Name: "arif",
+      //   Qualifi: "BCA",
+      //   Age: 25,
+      //   Address: "Dhaka",
+      // }
+
+      // const obj1={
+      //   Name: "Raees",
+      //   Qualifi: "Bcom",
+      //   Age: 27
+      // }
+      // const melt={...obj, ...obj1}
+      // console.log(melt);
+
+      // let number = "hundred"
+      // let b= 20;
+      // let a= 10
+      // console.log(number + b + a);
+      // console.log(a+ b+ number);
+
+      // const bigint = 123654789445n
+      // console.log( typeof bigint);
+
+      // const str= "my name is arif jamal";
+      // console.log(result=str.split(" "));
+
+      // string.charAt()
+      // const text="W3School";
+      // console.log(text.charAt(4));
+
+      // charAt() minus value accept nahi karta h
+
+      // string.At()
+      // const text="W3School";
+      // console.log(text.at(4));
+      // dono ka work same h but at() negative value ko bhi accespt krta h like
+
+      // const text="W3School";
+      // console.log(text.at(-4));
+
+      // const number=["mango", "apple", "kivi"];
+      // console.log(number.at(-1));
+
+      // const number=[10,15,20,12,30,50,25];
+      // number.sort(function(a,b){
+      //   return b-a;
+      // })
+
+      // console.log(number[1]);
+
+      // const number=[10,15,20,12,30,50,25];
+
+      // number.sort((a,b)=>{
+      //   return b-a;
+      // })
+      // console.log(number[1]);
+
+      // let largestPalindrome = 0;
+
+      // function isPalindrome(num) {
+      //     const numString = num.toString();
+      //     const reversedNum= numString.split('').reverse().join('');
+      //     return numString === reversedNum;
+      // }
+
+      // for (let i = 100; i < 1000; i++) {
+      //     for (let j = 100; j < 1000; j++) {
+      //         const product = i * j;
+
+      //         if (isPalindrome(product)) {
+      //             if (product > largestPalindrome) {
+      //                 largestPalindrome = product;
+      //             }
+      //         }
+      //     }
+      // }
+
+      // document.write("the Largest palinrome numbers ", largestPalindrome);
+
+      // let $x= false;
+      // console.log( typeof $x);
+
+      // function username(name ="sam"){
+      //   if(!name){
+      //     console.log("plaease enter a username");
+      //     return
+      //   }
+      //   return  `${name} just logged in `
+      // }
+
+      // console.log(username("Arif"))
+      // const tru = true
+      // function username(){
+      //   if(tru){
+      //     console.log("good day");
+      //   }else{
+      //     console.log("bad day");
+      //   }
+      // }
+      // // username()
+      //  function Calculate(a,b, callback){
+      //     return result= a+b;
+      //    callback(result)
+      //  }
+
+      //  function resultShow(result){
+      //   console.log(resultShow(a+b));
+      //  }
+      //  Calculate( 5, 10, result)
+
+      // const Calculate=(a,b, callback)=>{
+      //   return callback (a,b);
+      // }
+      //  const resulr=Calculate(3,5, function(num1,num2){
+      //  return num1+ num2;
+      //  })
+      //  console.log(resulr);
+
+      //  const subtraction=(a,b)=>{
+      //   return a-b
+      //  }
+      //  const subResult= Calculate( 8,3, subtraction)
+      //  console.log(subResult);
+
+      // var number = parseFloat("10.5");
+      // console.log(number);
+
+      // let x= Number.MAX_SAFE_INTEGER;
+      // console.log(x);
+
+      //  function sum(...numbrs){
+      //   return numbrs.reduce((total,num)=> total+num)
+      //  }
+      //  console.log(sum(10,20,15));
+
+      //    function sum(...numbers) {
+      //   return numbers.reduce((total, num) => total + num, 0);
+      // }
+
+      // console.log(sum(1, 2, 3, 5,10)); // Output: 6
+      // console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+
+      // const name= "asimAhmad"
+      // let reverseName='';
+
+      // for(let i=name.length-1; i>=0; i--){
+      //    reverseName += name[i]
+      // }
+      // console.log(reverseName);
+
+      // const num="my name is arif jamal adri";
+      // let ans=num.split(" ")
+      // ans.reverse()
+      // ans.join("*")
+      // console.log(ans)
+
+      // const numbers=[10,12,15,10,25,10,30];
+      // const num=numbers.sort((a,b)=>{
+      //   return b-a
+      // })
+      // console.log(num[0]);
+
+      // let user = 1;
+
+      // function number(n) {
+      //   if (n <= 20) {
+      //     if (n % 5 === 0 || n % 3 === 0) {
+      //       console.log("gholu");
+      //     } else if (n % 2 === 0) {
+      //       console.log("Changu");
+      //     } else {
+      //       console.log(n);
+      //     }
+      //     number(n + 1);
+      //   }
+      // }
+
+      // number(user);
+
+      // let user =1;
+      // function number(n){
+      //   if(n <= 20){
+      //     if(n % 5 === 0 || n % 3 === 0){
+      //       console.log("gholu");
+      //   }else if(n % 8 === 0){
+      //     console.log("arif");
+      //   }else{
+      //     console.log(n);
+      //   }
+      //   number(n+1);
+      // }}
+      // number(user);
+
+      // let count=''
+      // let charator="my name is arif jamal adri mau";
+
+      //   for(let i=0; i<charator.length ; i++){
+      //     let char=charator[i];
+
+      //     if(char=== 'a' || char === "e"  || char === 'i' || char === 'o' || char==='u'){
+      //       count += char
+
+      //     }
+
+      //   }
+      //   console.log(count)
+
+      // //  console.log(ans);
+
+      // const letter = new Map([
+      //   ["mango", 500],
+      //   ["Kivi", 200],
+      //   ["Apple", 300],
+      //   ["Banana", 600]
+      // ])
+      // console.log(letter.get("mango"));
+      // let count='';
+      // let string= 'my name is arif jamal';
+      // for(let i=0 ; i<string.length; i++){
+      //   let char=string[i];
+      //   if(char==='a' || char==='e' || char==='o' || char=== 'u' || char==='i'){
+      //   count+=char;
+      //   }else{
+
+      //   }
+      // }
+      // console.log(count);
+      // console.log (string);
+      // let count = '';
+      // let string = 'my name is arif jamal';
+      // for (let i = 0; i < string.length; i++) {
+      //   let char = string[i]
+
+      //   if (!(char === 'a' || char === 'e' || char === 'o' || char === 'u' || char === 'i')) {
+      //     count += char;
+      //   }
+      // }
+
+      // console.log(count);
+      // let user=[
+      //   {name: "arif",age: 25, qualifi: "BCA"},
+      //   {name: "Raees",age: 21, qualifi: "MCA"},
+      //   {name: "Danish",age: 23, qualifi: "BSC"},
+      //   {name: "Danish",age: 22, qualifi: "BA"},
+      // ]
+
+      // let ab=user.filter((item)=>{
+      //   return item.name==="Danish"
+      // })
+      // console.log(ab);
+
+      // let String= ["mango", "Papaya", "apple","mango"]
+
+      //   let a = String.filter((item)=>{
+      //     return item ==="apple"
+      //   })
+      // console.log(a);
+
+      // let a= String.reduce((accumolator,currentValue)=>{
+      //   return accumolator+currentValue
+      // })
+      // console.log(a);
+
+      // setTimeout(()=>{
+      //   console.log(ans);
+      // }, 5000)
+
+      // function myFuc(a,b)
+      // {
+      //   return a+b
+      // }
+      // let ans=myFuc(4,8)
+      // console.log(ans);
+      //
+      // function myfunction(callback){
+      //   setTimeout(()=>{
+      //   let product= " I love  ❤ India"
+      //   console.log(product);
+      //    callback(product)
+      //   },3000)
+      // }
+      // function  makeDough(product, callback){
+      //   setTimeout(()=>{
+      //     let dough= product  ;
+      //     console.log(dough);
+      //     callback(dough);
+      //   },3000)
+      // }
+      // function  makePizza(dough,callback){
+      //       setTimeout(()=>{
+      //         const Pizza= dough
+      //         console.log();
+      //         callback(Pizza)
+      //       })
+      // }
+      // myfunction((product)=>{
+      //   makeDough(product, (dough)=>{
+      //     makePizza(dough, (Pizza)=>{
+      //       console.log("I got Pizza ", Pizza);
+      //     })
+      //   })
+      // })
+
+      // function myfunction(callback) {
+      //   setTimeout(() => {
+      //     let product = "I love ❤ India";
+      //     console.log(product);
+      //     callback(product);
+      //   }, 3000);
+      // }
+
+      // function makeDough(product, callback) {
+      //   setTimeout(() => {
+      //     let dough = product + " ❤";
+      //     console.log(dough);
+      //     callback(dough);
+      //   }, 3000);
+      // }
+
+      // myfunction((product) => {
+      //   makeDough(product, (dough) => {
+      //     console.log(dough);
+      //   });
+      // });
+
+      // getter and setter
+
+      // const obj= {
+      //   name: "arif",
+      //   age: 20,
+      //    getName: function(){
+      //     return this.name.toUpperCase()
+      //    }
+      // }
+      // console.log(obj.getName());
+
+      //  this is getter---------------------
+      // const obj= {
+      //   name: "arif",
+      //   age: 20,
+      //       get getName(){
+      //          return this.name.toUpperCase()
+
+      //    }
+      // }
+      // console.log(obj.getName);
+
+      // this is setter----------------------
+      // const obj= {
+      //   name: "arif",
+      //   age: 20,
+      //       set settName(n){
+      //           this.name= n.toUpperCase()
+
+      //    }
+      // }
+
+      // obj.settName= "Asim"
+      // console.log(obj.name);
+
+      // const myset= new Set();
+
+      // myset.add(1)
+      // myset.add(2)
+      // myset.add(3)
+      // myset.add(4)
+
+      // console.log(myset.size);
+      // //  user wants  check element --------------
+      // console.log(myset.has(3));
+      // //  user wants  delete element --------------
+
+      // console.log(myset.delete(3));
+      // //  user wants  show  element --------------
+      // for(let key of myset){
+      //   console.log(key);
+      // }
+
+      // let name="arifjamal"
+      // console.log(...new Set(name));
+
+      // parseInt  string convert into number__________________
+      // const numbers= parseInt("1234")
+      // console.log(typeof numbers);
+
+      // parseFloat  string convert into number__________________
+      // const numbers= parseFloat("1234")
+      // console.log(typeof numbers);
+
+      // let count='';
+      // let username="MY NAME IS PRINCE THAKUR";
+      //  let a=username.toLowerCase();
+      // for(let i=0; i<a.length; i++){
+      //   let char=a[i]
+      //   if(!(char==='a' || char==='e' ||  char=== 'o' || char=== 'u' || char=== 'i')){
+      //    count +=char
+      //   }
+
+      // }
+      // console.log(count);
+
+      // let name =" Aarif Jamal";
+      //    let arif= name.toLowerCase();
+      // let count='';
+      // for(let i=0; i<arif.length; i++){
+      //   let char= arif[i]
+      //   if(char ==='a' || char==='e' || char==='i' || char==='o' || char==='u'){
+      //    count+=char
+      //   }
+      // }
+      // console.log(count);
+
+      // let user=100;
+
+      // for(let i=1; i<user; i++){
+      //   if(user % i ===0){
+      //    console.log(i);
+      //   }
+      // }
+      // function isPrime(num) {
+      //     for(let i = 2; i < num; i++)
+      //         if(num % i === 0) return false;
+      //     return num > 1;
+      // }
+
+      // console.log(isPrime(8));
+
+      // function func1(){
+      //   setTimeout(()=>{
+      //     console.log(x);
+      //     console.log(y);
+      //   },3000);
+
+      //   var x = 2;
+      //   const y = 12;
+      // }
+
+      // func1();
+
+      // function func2(){
+      //   for(var i = 0; i < 3; i++){
+      //     let count =+i
+      //     setTimeout(()=> console.log(count),2000);
+      // }
+      // }
+      // func2();
+
+      // (function(){
+      //   setTimeout(()=> console.log(1),2000);
+      //   console.log(2);
+      //   setTimeout(()=> console.log(3),0);
+      //   console.log(4);
+      // })();
+
+      // let x= {}, y = {name:"Ronny"},z = {name:"John"}, c = {name:"asim"};
+      // x[y] = {name:"Vivek"};
+      // x[z] = {name:"Akki"};
+      // x[c] = {name:"Arif"};
+
+      // console.log(x[y]);
+
+      // function runFunc(){
+      //   console.log("1" + 1);
+      //   console.log("A" - 1);
+      //   console.log(2 + "-2" + "2");
+      //   console.log("Hello" - "World" + 78);
+      //   console.log("Hello"+ "78");
+      // }
+      // runFunc();
+
+      // let a = 0;
+      // let b = false;
+      // console.log((a == b));
+      // console.log((a === b));
+
+      // var x = 23;
+
+      // (function(){
+      //   var x = 43;
+      //   (function random(){
+      //     x++;
+      //     console.log(x);
+      //     var x = 21;
+      //   })();
+      // })();
+
+      // let grid= [
+      //   [1,2,3,4,10],
+      //   [1,2,3,4,6],
+      //   [1,2,3,4,3],
+      //   [1,2,3,4,3],
+      //   [1,2,3,4,2],
+      // ]
+
+      // function calculationMaxproduct(grid){
+      //   let maxProduct=0;
+      //   for(let row=0; row<5 ; row++){
+      //     for(let col=0; col<5; col++){
+      //       if(row+1 <5){
+      //         let harizontal= grid[row][col]*grid[row+1][col]
+      //         maxProduct= Math.max(harizontal, maxProduct)
+      //       }
+      //       if(col+1 <5){
+      //         let vertical= grid[col][row]*grid[row][col+1]
+      //       }
+      //     }
+      //   }
+      //   return maxProduct
+      // }
+      // let ans= calculationMaxproduct(grid)
+      // console.log(ans);
+
+      // how to create method------------------------------------>
+
+      // function obejct----
+
+      // const user={
+      //   name: "arif",
+      //   age: 20,
+      //   about: function(){
+      //     console.log(`my name is ${this.name} and my age is ${this.age}`);
+      //   }
+      // }
+
+      // user.about()
+
+      //  function userInfo(){
+      //     console.log(`my name is ${this.name} and my age is ${this.age}`);
+      //   }
+
+      // const user1={
+      //   name: "arif",
+      //   age: 20,
+      //   about: userInfo
+      // }
+
+      // const user2={
+      //   name: "asim",
+      //   age: 20,
+      //   about: userInfo
+      // }
+
+      // const user3={
+      //   name: "umar",
+      //   age: 20,
+      //   about: userInfo
+      // }
+
+      // user2.about()
+
+      // const user={
+      //   name: "umar",
+      //   age: 20,
+      //   about: function(){
+      //     console.log(this.name, this.age);
+      //   }
+      // }
+
+      // const user1={
+      //   name: "Arif",
+      //   age: 26,
+      // }
+
+      // user.about.call(user1)
+
+      // arrow function ke sath this ka use nahi karte h arrow function ke sath this sorounding ko reffer krta h sorounding means one level up ko reffer karega
+
+      // const user={
+      //   name: "umar",
+      //   age: 20,
+      //   about: ()=>{
+      //     console.log(this.name, this.age);
+      //   }
+      // }
+
+      // const user1={
+      //   name: "Arif",
+      //   age: 26,
+      // }
+
+      // user.about.call(user1)
+
+      // const persson= {
+      //   Fname: "arif",
+      //   Lname: "ansari",
+      //   age: 20,
+      //   address: "Adri, Mau,utter, Perdesh",
+      //   about: function(){
+      //     return ` this is my  Fname ${this.Fname} and this is my Lname ${this.Lname} and year ${this.age}`
+      //   },
+      //   is18: function(){
+      //     return this.age>=18
+      //   }
+      // }
+
+      // 1)function (that function create object)
+      // 2) add ke and value parseInt
+      // 3) return object
+
+      // function createUser(Fname,Lname,age, address){
+      //   const user={}
+      //   user.Fname= Fname,
+      //   user.Lname= Lname,
+      //   user.age= age,
+      //   user.address= address,
+      //   user.about= function(){
+      //     return ` this is my  Fname ${this.Fname} and this is my Lname ${this.Lname} and year ${this.age}`
+      //   };
+      //   user.is18= function(){
+      //     return this.age>=18
+      //   }
+      //   return user
+      // }
+
+      // const user1= createUser("arif", "jamal",20, "adri Mau")
+
+      // console.log(user1);
+      //  const ans= user1.is18()
+      //  console.log(ans);
+
+      //  const object1= {
+      //   key1: "value1",
+      //   key2: "value2",
+      //  }
+      // // object2 ke parameter me object1 pass krne se dono ka connection bn gya h
+      //  const object2=Object.create(object1)
+      //  object2.key3= "value3";
+      // console.log(object2.key2);
+
+      // oop inheritance ----------------------->
+      // class Students {
+      //    constructor(name, age, cls, subject) {
+      //       console.log(this, 'arif');
+      //       this.myname = name;
+      //       this.myage = age;
+      //       this.mycls = cls;
+      //       this.mysubject = subject;
+      //    }
+
+      //    biodata(){
+      //       return(`My name is ${this.myname}, my age is ${this.myage}, my class is ${this.mycls}, and my subject is ${this.mysubject}`);
+      //    }
+      //   }
+
+      // class players extends Students {
+      //    constructor(name, age, cls, subject, game) {
+      //       super(name, age, cls, subject);
+      //       this.mygame = game;
+      //    }
+
+      //    feature() {
+      //       return `${super.biodata()} and my game name is ${this.mygame}`;
+      //    }
+      // }
+
+      // let obje2 = new players("arif", 20, "10th", "math", "football");
+      // console.log(obje2.biodata());
+      // console.log(obje2.feature());
+
+      // this is a abstraction user call kerte time only age pass kerdiya h usko output mil gya code ki complexity ko  user n dekhe only showing the easy ui  or functonality--------------------
+
+      // const user1={
+      //   firstame :"mohd",
+      //   lastName: "arif",
+      //   age: 25,
+      // }
+
+      // function getDateFull(age){
+      //   return new Date().getFullYear()-age
+      // }
+      // console.log(getDateFull(30));
+
+      // object and function ko ek jagah per fit kerne ko hi encapsulation kahte h aur encapsution me baher koi kuchh bhi chnage nahi ker skat h
+
+      // const user2={
+      //   firstame :"mohd",
+      //   lastName: "arif",
+      //   age: 25,
+      //   getDateFull: function(){
+      //   return new Date().getFullYear() -this.age
+      // }
+      // };
+      // console.log(user2.getDateFull())
+
+      // if i have multiple user when define the properties of user how to do? with ------------->
+
+      // const user2={
+      //   firstame :"mohd",
+      //   lastName: "arif",
+      //   age: 25,
+      //   getDatefull(){
+      //      return new Date().getFullYear()-user2.age
+      //   }
+
+      // }
+
+      // function  myFunction(firstName, lastName,age){
+      // const user={
+      //   firstName,
+      //   lastName,
+      //   age,
+      // }
+
+      //   return user
+      // }
+      //  console.log(myFunction('nasir', 'kamal',22));
+
+      //  function getDatefull(){
+      //      return new Date().getFullYear() -this.age
+      //   }
+
+      //   function UserCreate(firstName,lastName,age){
+      //     const user2={
+      //   firstName,
+      //   lastName,
+      //   age,
+      //   getDatefull,
+      // }
+      // return user2
+      //   }
+
+      //  const  ans1 =UserCreate('nasir', 'kamal',25);
+      //  const ans2 =UserCreate('nasir', 'kamal',25);
+
+      // function created(firstName, lastName, age) {
+      //   this.firstName = firstName;
+      //   this.lastName = lastName;
+      //   this.age = age;
+      // }
+
+      // created.prototype.getBirthYear = function() {
+      //   return new Date().getFullYear() - this.age;
+      // };
+
+      // let user1 = new created('arif', 'kamal', 20);
+      // let user2 = new created('asir', 'siddiqi', 25);
+
+      // console.log(user1);
+      // console.log(user2);
+
+      // // syncronous  way-----------
+      // func2=()=>{
+      //   console.log("this is func2 code");
+      // }
+
+      //  func1 =()=>{
+      //   console.log("this is first line");
+      //   func2()
+      //   console.log("this is end line ");
+      //  }
+      // func1()
+
+      // asyncronous way-----------
+      // func2=()=>{
+      //   setTimeout(()=>{
+      //  console.log("this func2 code ");
+      //   },3000)
+      // }
+
+      //  func1 =()=>{
+      //   console.log("this is first line");
+      //   func2()
+      //   console.log("this is end line ");
+      //  }
+      // func1()
+      // Your JavaScript code
+      // const user = {
+      //     name: "asim",
+      //     age: 20,
+      //     qualifi: "BCA"
+      // };
+
+      // let myuser = JSON.stringify(user);
+      // localStorage.setItem("arif", myuser);
+      // let a = localStorage.getItem("arif");
+
+      // let b = JSON.parse(a);
+      // document.getElementById("demo").innerHTML = b.name;
+
+      // const object={name:"arif", age:10}
+      // let myarif=JSON.stringify(object);
+      // localStorage.setItem("arif", myarif)
+
+      // let a= localStorage.getItem("arif");
+      //  let b = JSON.parse(a);
+      //  console.log(b.name);
+
+      // let reduxState = {
+      //   post: 0,
+      //   username: "arif",
+      //   age: 25
+      // }
+
+      // function reducer(state, action){
+      //   if(action.type === 'post/increment'){
+      //     return {...state, post: state.post + 1}
+      //   }
+      //    else if(action.type=== 'post/decrement'){
+      //     return {...state, post: state.post - 1}
+      //   }
+      //     else if(action.type==='post/decrementBy'){
+      //     return {...state, post: state.post + action.payload}
+      //   }
+      // }
+
+      // reduxState = reducer(reduxState, {type: 'post/increment'});
+      // console.log(reduxState);
+      // reduxState = reducer(reduxState, { type: 'post/decrement'});
+      // console.log(reduxState);
+      // reduxState = reducer(reduxState, { type: 'post/decrementBy', payload: 10});
+      // console.log(reduxState);
+
+      // recursion function
+
+      // let counter =1;
+      // function recursion(number){
+
+      //   if(counter>number){
+      //     return;
+      //   }
+      //   console.log(counter)
+      //   counter++
+      //   recursion(number)
+      // }
+      // recursion(15)
+
+      // const userNumber= prompt("plaese enter a any number");
+
+      // let counter=1;
+
+      // function number(userNumber){
+      //  if(counter>userNumber){
+      //       return
+
+      //  }
+      //  console.log(counter);
+      //  counter++;
+      //  number(userNumber)
+
+      // }
+      // number(userNumber)
+
+      // const user1= {
+      //   key1: "value1",
+      //   key2: "value2"
+      // }
+
+      // let user2={
+      //   key3: "value3"
+      // }
+      // user2 = Object.create(user1)
+      // console.log(user2.key2);
+
+      //  for(let i=1; i<=5 ; i++){
+      //   let row= ""
+      //   for(let j=1; j<=i; j++){
+      //     row+= j + " "
+
+      //   }
+      //   console.log(row)
+
+      //  }
+
+      //  for(let i=5; i>=1 ; i--){
+      //   let row= ""
+      //   for(let j=1; j<=i; j++){
+      //     row+= j + " "
+
+      //   }
+      //   console.log(row)
+
+      //  }
+
+      //  how ro replace a c elements  in a array with loop-------------------------->
+      // const arr=[2,3,1,5,"a","a",6,"c",1];
+
+      // let char=[]
+      // for(let i=0; i<arr.length; i++){
+      //      if(arr[i]==="a" || arr[i]==="c"){
+      //      let test = arr[i] = 1;
+      //       char.push(test)
+      //      }else{
+      //       char.push(arr[i])
+      //      }
+      //     }
+
+      //     console.log(char);
+      //  how ro replace a c elements  in a array with map-------------------------->
+
+      // const arr=[2,3,1,5,"a","a",6,"c",1];
+
+      // let newArray= arr.map((item)=>{
+      //   if(item === "a"){
+      //     return 1
+      //   }
+      //   if(item === "c"){
+      //     return 10
+      //   }
+      //   return item
+      // })
+
+      // console.log(newArray);
+
+      // function printPattern(numRows) {
+      //     for (let i = 1; i <= numRows; i++) {
+      //         let row = "";
+      //         for (let j = 1; j <= i; j++) {
+      //             row += j + " ";
+      //         }
+      //         console.log(row);
+      //     }
+      // }
+
+      // let numRows = 5;
+      // printPattern(numRows);
+
+      // all charecter replace into 2
+      // const arr=[10,12,30,15,"a","c",0,2,5,"c"]
+      // let newarr= arr.map((item)=>{
+      //   if(item === "a"){
+      //     return 2
+      //   }
+      //   if(item === "c"){
+      //     return 5
+      //   }
+      //   return item
+      // })
+      // console.log(newarr);
+
+      // const arr= [2,5,10,12,"b", 20,15,"a",10]
+      // let newarr= arr.map((item)=>{
+      //   if(item === "b"){
+      //     return 5
+      //   }
+      //    if(item === "a"){
+      //     return 6
+      //   }
+      //     return item
+
+      //   })
+      //   console.log(newarr);
+
+      // example passed by value----------------
+      // function func1(num){
+      // num= num *2
+      // console.log(num);
+      // }
+      // let x= 20
+      // func1(x)
+      // func1(5)
+
+      // const arr= "arif jamal";
+      // const arr1= arr.split(" ");
+      // let newArray= arr1.map((item,index)=>{
+      //   return item[0].toUpperCase()+item.slice(1)
+      //  })
+      // console.log(newArray.join(" "));
+
+      // const arif=[1,3,5,7,8, "a" ,5,7,8,9,"b"];
+      // const newarif=arif.map((item)=>{
+      //   if(item === "a" || item === "b"){
+      //     item = 2
+      //     return item
+
+      //   }else{
+      //     return item
+      //   }
+      // })
+      // console.log(newarif);
+
+      // const userNumber= +prompt("enter a number")
+      // let isPrime=true;
+      // if(userNumber<=1){
+
+      //   console.log(`${userNumber} is not a prime number`);
+
+      // }else if(userNumber>=2){
+
+      //   for(let i=2;i<userNumber;i++){
+      //     if(userNumber%i===0){
+      //       isPrime=false;
+
+      //     }
+      //   }
+
+      // }
+
+      // isPrime ?console.log(`${userNumber} is  a prime number`): console.log(`${userNumber} is not a prime number`);
+
+      // let umar= "my name is arif"
+      // let reverse=''
+      // for(let i=umar.length-1; i>=0; i--){
+      //   reverse+= umar[i];
+      // }
+      // console.log(reverse);
+
+      // const arif="my name is arif";
+      // let reverse="";
+      // for(let i=arif.length-1; i>=0; i--){
+      //   reverse+= arif[i]
+      // }
+      // console.log(reverse);
+      // const string = "arif jamal"; // Removed the leading space
+      // const change = string.split(" ");
+
+      // const newString = change.map((item) => {
+      //   return item[0].toUpperCase() + item.slice(1); // Corrected to use slice(1)
+      // });
+
+      // console.log(newString.join(" "));
+
+      // const a = 2;
+      // const b = "2";
+      // console.log(a * b);
+
+      // const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      //   target = 10;
+
+      // const products = [
+      //   { name: "mobile", price: 100 },
+      //   { name: "computer", price: 200 },
+      //   { name: "teblate", price: 50 },
+      // ];
+
+      // let filterProducts = [];
+      // products.map(
+      //   (item) =>
+      //     item.price > 50 &&
+      //     filterProducts.push({ price: item?.price, mobile: item?.name })
+      // );
+      // console.log("above50price===", filterProducts);
+
+    // let number=[]
+    //   const arr=[1,2,3,4,5,6,7,8,9] ;
+    //   for(let i=0; i<arr.length; i++){
+       
+    //     for(let j= i+1; j<arr.length; j++){
+    //        if(arr[i] + arr[j] === 10){
+    //         number.push([arr[i],arr[j]])
+    //        }
+    //     }
+    //   }
+    //   console.log(number);
+      
+      // const arr1=[1,2,3,4,5,6,7,8,9];
+      // arr1.map((curNum, index) => curNum + arr1[index + 1] === 10 && number.push([curNum, arr1[index + 1]]))
+
+      // console.log("number====", number);
+
+  // const arr=[1,2,3,4,5,6,7,8,9]
+  // const result=[];
+  // for(let i=0; i<arr.length ; i++){
+  //   for(let j=i+1; j<=arr.length; j++){
+  //     if(arr[i]+ arr[j]==10 ){
+  //       result.push([arr[i],arr[j]])
+  //     }
+
+  //   }
+  // }
+  // console.log(result);
+
+
+//   const isPalindrome=252;
+
+// const checkPalindrome = () => {
+//     const str = isPalindrome.toString().toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+//     const reverse = str.split('').reverse().join('');
+  
+    
+  
+//     return str === reverse;
+// }
+
+
+// console.log(checkPalindrome());
+
+
+// let number = 10;
+// let result = 0;
+// let numberStr = number.toString(); // Convert number to string to iterate over digits
+
+// for (let i = 0; i < numberStr.length; i++) {
+//     for (let j = 0; j <= i; j++) {
+//         console.log('*');  // Print '*' for each loop iteration
+//     }
+//     console.log(result); // Print result after each row of '*'
+// }
+
+
+// function printDiamond(n) {
+//     // Top half of the diamond
+//     for (let i = 1; i <= n; i++) {
+//         let str = ' '.repeat(n - i);   // Print leading spaces
+//         str += '*' .repeat(2 * i - 1);  // Print stars
+//         console.log(str);
+//     }
+
+    // Bottom half of the diamond
+
+    // for (let i = n - 1; i >= 1; i--) {
+    //     let str = ' '.repeat(n - i);   // Print leading spaces
+    
+    //     str += '*'.repeat(2 * i - 1);  // Print stars
+    //     console.log(str);
+//     // }
+// }
+
+// // Example usage
+// let numberss = 5;
+// printDiamond(numberss);
+
+
+
+  // for(let i=1; i<=5; i++){
+  //   let row = " ";
+  //   for( let j=1 ; j<=i ; j++){
+  //     row += "*" + ' ';
+  //   }
+  //  console.log(row);
+    
+  // }
+
+
+
+
+// function printDimond(n){
+//   for(let i=1; i<=n; i++){
+//   let str = " ".repeat(n-i);
+//   str += "*".repeat(2* i-1).trim();
+//   console.log(str);
+//   }
+// }
+// printDimond(5);
+
+
+
+//   for (let i = 1; i <= 5; i++) {
+//     let row = '';
+//     for (let j = 1; j <= i; j++) {
+//         row +=  "*"  + ' ';
+//     }
+//     console.log(row);
+// }
+
+
+
+
+// for (let i = 1; i <= 5; i++) {
+//     let row = '';
+//     for (let j = 1; j <= i; j++) {
+//         row += '*' + ' ';
+//     }
+//     console.log(row);
+// }
+
+// for (let i = 4; i >= 1; i--) {
+//     let row = '';
+//     for (let j = 1; j <= i; j++) {
+//         row += '*' + ' ';
+//     }
+//     console.log(row);
+// }
+
+
+// for(let i= 1 ; i<5; i++){
+//   let row="";
+//   for(let j=1 ; j<=i ; j++){
+//     row += "*" + " "
+//   }
+//   console.log(row);
+// }
+
+//  const string= "jamal"
+// const ispelindrome=()=>{
+//   let str = string.toString().toLowerCase().replace(/[^a-z0-9]/g , '')
+//   const reverse= str.split('').reverse().join('')
+//   return str=== reverse 
+// }
+// console.log(ispelindrome())
+
+// function ispeindrome(){
+//   let str = string.toLowerCase()
+//   let reverse= str.split('').reverse().join('')
+//   return str===reverse
+// }
+// console.log(ispeindrome());
+
+
+// function dymondPrint(n){
+//   for(let i=1; i<n ; i++){
+//     let row = " ".repeat(n-i)
+//         row = "*".repeat(i);
+//         console.log(row);
+//   }
+//   for(let i=4; i<n ; i--){
+//     let row = " ".repeat(n-i)
+//         row = "*".repeat(i);
+//         console.log(row);
+//   }
+// }
+
+// dymondPrint(5)
+
+
+// const string= "abu asim"
+// let reverse=string.split('').reverse().join("")
+// console.log(reverse);
+
+
+// const arr=[1,3,2,5,4,6,9,7,8,10];
+//   arr.sort((a,b)=>{
+//     return a-b
+//   })
+
+// console.log(arr);
+// const arr=[1,3,2,5,4,6,9,7,8,10];
+// for(let i=1; i<arr.length; i++){
+  
+// }
+// console.log(arr);
+
+// function dimondPattern(n){
+//   for(let i=1; i<n ;i++){
+//     let row = " ".repeat(n-i);
+//     row += "*".repeat(2*i-1) 
+//     console.log(row);
+    
+//   }
+// }
+// dimondPattern(5)
+
+
+// for(let i=1 ; i<=5; i++){
+//   let count='';
+//    for(let j=1; j<=i; j++){
+//     count+="*" +" "
+ 
+//    }
+//    console.log(count);
+// }
+
+
+// let a= + prompt("enter anumber");
+// let b= + prompt("enter a number");
+
+//  function addTwo(){
+//   let sum= a+b;
+//   console.log(sum);
+//  }
+ 
+//  addTwo();
+
+//  console.log("1"== 1);
+
+// let gender=prompt("Enter our gender name");
+
+//  function checkTheGender(){
+//   if(gender.toLowerCase().trim() === "male"){
+//     console.log("you are a male");
+//   }else if(gender.toLocaleLowerCase().trim() === "female"){
+//         console.log("you are  a female");
+        
+//   }else{
+//     console.log( "you are a other gender"); 
+//   }
+//  }
+// checkTheGender()
+
+
+
+// function printNumber(n) {
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("honey arif"); 
+//     } else if (i % 3 === 0) {
+//       console.log("honey sir");
+//     } else if (i % 5 === 0) {
+//       console.log("arif sir");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+
+// printNumber(30);
+
+
+// let age= prompt("how old are you? ")
+
+// const accessCode= (age> 18) ? true : false
+// console.log(accessCode);
+
+
+
+// alert(null || 0 || undefined  )
+
+// function primeNumber(n) {
+//   for (let i = 2; i < n; i++) {
+//     let isPrime = true;
+
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+
+//     if (isPrime) {
+//       console.log(i + " is a prime number");
+//     } else {
+//       console.log(i + " is not a prime number");
+//     }
+//   }
+// }
+
+// primeNumber(10);
+
+// let aarOfObj = [
+//     { name: "arif", age: 25 },
+//     { name: "deepak", age: 20 },
+//   ];
+//   let newObj=aarOfObj.map((item)=>{
+//     return {name:item.name,age:item.age+5}
+//   })
+
+
+// let username= {name: "arif"};
+//  let permission1 = {canView : true}
+//  let permission2 = {canView : true}
+
+//  Object.assign(username, permission1,permission2)
+
+//  console.log(username.name);
+//  console.log(username.canView , 'honey');
+//  console.log(username.canView , 'arif');
+
+// let arrr=[10,3,5,6];
+
+//  arrr.forEach(element => {
+//   if(element === 10){
+//     console.log("found");
+//   }
+//    console.log(arrr);
+// });
+ 
+// const palindrome= 121
+
+//  function palindromeChek(){
+//   let str = palindrome.toString();
+  
+//   let reverseNum= str.split('').reverse().join("");
+//   return str === reverseNum 
+
+  
+//  }
+//  console.log(palindromeChek());
+
+// for(let i=1; i<=5; i++){
+//   let row=''
+//   for(let j=1; j<=i; j++){
+//    row += " * "
+//   }
+//   console.log(row);
+  
+// }
+
+
+//  function dimondrint(n){
+//   for(let i=1; i<n; i++ ){
+//       let  row = ' '.repeat(n-i)
+//       row += "*".repeat(2*i-1)
+//       console.log(row);
+//  }
+
+//   }
+ 
+//  dimondrint(5)
+
+// const arr=[1,5,10,5,"arif", "honey", null, undefined ,true, NaN];
+
+//  let number= arr.filter((item)=>{
+//   return typeof item === 'number' && !isNaN(item)
+//  })
+//  let reducer = number.reduce((value, item)=>{
+//   return value + item
+//  })
+//  console.log(reducer);
+ 
+// let birthYear = 1960;
+// let currentYear = 2024;
+// let maxAge = 60;
+
+// function retirementDateCheck(birthYear) {
+//     let currentAge = currentYear - birthYear;
+//     let yearsUntilRetirement = maxAge - currentAge;
+
+//     if (yearsUntilRetirement === 0) {
+//         return "You are retiring this year.";
+//     } else if (yearsUntilRetirement > 0) {
+//         return `You will retire in ${yearsUntilRetirement} years.`;
+//     } else {
+//         return `You retired ${-yearsUntilRetirement} years ago.`;
+//     }
+// }
+
+// console.log(retirementDateCheck(birthYear));
+
+
+//  an array change into object with key value --------------------------
+
+// const arr=[3,3,5,6,3,4,6,5]; 
+// let tempArray=[];
+// const obj ={};
+
+// for(let i=0; i<arr.length; i++){
+//   if(tempArray.includes(arr[i])){
+//     obj[arr[i]]++;
+//   }else{
+//     obj[arr[i]]=1
+//     tempArray.push(arr[i])
+//   }
+// }
+// console.log(obj);
+
+  
+
+// const arr = [3, 3, 5, 6, 3, 4, 6, 5];
+// const counts = {}; // Object to store counts
+
+// arr.forEach((num) => {
+//   counts[num] = (counts[num] || 0) + 1;
+// });
+
+// console.log(counts);
+//  let newarr=""
+//  const arrr=[2,4,3,5,2,6,2,3,4];
+//   arrr.map((item)=>{
+//    if(arrr.indexOf(item) !== arrr.lastIndexOf(item)){
+//     newarr += " "+ item
+//    }
+   
+//  })
+// console.log(newarr);
+
+
+
+// const array=[2,3,4,5,6,2,3];
+// let newArray="";
+// array.forEach((item,index)=>{
+//   if(array.indexOf(item) !== array.lastIndexOf(item)){
+//     newArray += " "+ item
+//   }
+
+// })
+// console.log(newArray);
+
+
+// fibonacci sequense--------------
+
+
+// const fibonacci=[0,1];
+
+// for(let i=2; i<10; i++){
+//   fibonacci[i]= fibonacci[i-1]+fibonacci[i-2]
+// }
+// console.log(fibonacci);
+
+
+// function dimondPattern(n){
+//  for(let i=1; i<n; i++){
+//   let row = " ".repeat(n-i);
+//       row += "*".repeat(2*i-1)
+//       console.log(row);
+     
+//  }
+//  for(let i=n; i>=1; i--){
+//   let row = " ".repeat(n-i);
+//       row += "*".repeat(2*i-1)
+//       console.log(row);
+//  } 
+// }
+
+//  dimondPattern(5);
+
+// const obj = { name: "arif" , age:20};
+// let count = 0;
+
+// function checkObject(obj) {
+//   for (let key in obj) {
+// count++;
+//   }
+//   if(count == 1) {
+//     return `In the object has ${count} ${Object.keys(obj).join(' ')}`
+    
+//   }else if(count > 1) {
+//     return  `In the object have ${count} ${Object.keys(obj).join(' ')}`
+//   }
+   
+// }
+
+// console.log(checkObject(obj));
+
+
+// const object={"honey": 10000, "arif" : 520000, "tiwari" : 130000,  "kamlesh": 50000, }
+// let greatestSalary=0;
+// let name;
+// for(let key in object){
+//     if(object[key]> greatestSalary){
+//       name=key;
+//       greatestSalary=object[key];
+      
+//     }
+   
+// }
+// console.log(greatestSalary);
+// console.log(name);
+
+// const list = {
+//   value:1,
+//   next:{
+//     value:2,
+//     next:{
+//       value:3,
+//       next:{
+//         value:4,
+//         next:{
+//           value:undefined,
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// console.log(list?.next?.next?.next?.next?.value);
+
+// const obj={
+//   name:"hoey",
+//   age:"10",
+//   next:{
+//     nextname:"arif",
+//     nextage:"20",
+//   }
+// }
+
+// const {name, age ,next:{nextname, nextage}}=obj
+
+
+
+
+
+
+
+
+// const object = {
+//   name: 'John',
+//   age: 30,
+// }
+
+// console.log(Object.values(object));
+
+// function fectorial(n){
+//   return n ? n * fectorial(n -1) : 1
+
+// }
+// console.log(fectorial(5))
+
+
+// function factorial(n){
+//   if(n === 0 ){
+//     return 1
+//   }else{
+//     return n * factorial(n - 1)
+//   }
+// }
+
+//  console.log( factorial(5));
+
+// let count= 1
+// let number=5
+// for(let i=1 ;i<=number ; i++ ){
+//    if(number === 0){
+//      break;
+//    }
+//     count *=  i
+  
+// }
+
+// console.log(count);
+
+// let checkValue= "madam"
+//  const  pelindrome=(checkValue)=>{
+//   let str = checkValue.toLowerCase();
+
+//   let reversed =str.split("").reverse().join("");
+//   return str === reversed;
+
+//  }
+// console.log(pelindrome(checkValue));
+ 
+
+// let name= "salman";
+// let storestring= ""
+// let reverse =""
+
+
+// function pelindrome(name){
+
+//   for(let i=0; i<name.length; i++){
+//     storestring += name[i]
+//   }
+
+//   for(let i=name.length-1; i>=0; i--){
+//     reverse += name[i]
+//   }
+// return  storestring ===  reverse ; 
+// }
+
+// console.log( pelindrome(name));
+
+// let username= prompt("Enter User Full Name ");
+
+//  let newUser= username.split(" ")
+
+//     firstLetterUpper=newUser.map((item)=>{
+//      return  item[0].toUpperCase() + item.slice(1)
+//     })
+   
+// console.log(firstLetterUpper.join(" ")); 
+
+ 
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url("./images/pexels-kirandeep-singh-walia-11799670.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%,100%;
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgba(0, 0, 0, 0.105);
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: lime;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.9s ease-in-out;
+}
+.logo:hover{
+    color: black;
+    transform: scale(1.5);
+
+}
+nav ul li{
+    list-style: none;
+    transition: 0.9s ease-in-out;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: lime;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: black;
+    
+    transition: 0.5s ease-in-out;
+}
+nav ul li:hover{
+    transition: 0.9s ease-in-out;
+     transform: scale(1.5);
+    color: black;
+}
+.main{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px
+}
+button{
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid lime;
+    background-color: rgba(0, 0, 0, 0.244);
+}
